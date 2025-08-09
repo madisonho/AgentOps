@@ -3,6 +3,7 @@ import { AIFlowCanvas } from "@/components/sandbox/AIFlowCanvas";
 import { MetricChart, type MetricPoint } from "@/components/sandbox/MetricChart";
 import { ActionTimeline, type ActionItem } from "@/components/sandbox/ActionTimeline";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { toast } from "@/hooks/use-toast";
 
@@ -10,6 +11,9 @@ const Index = () => {
   const [metrics, setMetrics] = useState<MetricPoint[]>([{ idx: 0, correctness: 60 }]);
   const [actions, setActions] = useState<ActionItem[]>([]);
   const tick = useRef(1);
+  const [chatText, setChatText] = useState("");
+  const [chatQuery, setChatQuery] = useState<string | undefined>(undefined);
+  const [chatVersion, setChatVersion] = useState(0);
 
   const handleStepChange = useCallback((id: string, payload: { label: string; param: number; correctness: number }) => {
     setMetrics((m) => [...m, { idx: tick.current++, correctness: payload.correctness }].slice(-40));
@@ -31,6 +35,13 @@ const Index = () => {
     tick.current = 1;
   }, []);
 
+  const submitChat = useCallback((e?: React.FormEvent) => {
+    e?.preventDefault();
+    if (!chatText.trim()) return;
+    setChatQuery(chatText.trim());
+    setChatVersion((v) => v + 1);
+  }, [chatText]);
+
   const onPointerMove = useCallback((e: React.MouseEvent) => {
     const target = e.currentTarget as HTMLElement;
     const rect = target.getBoundingClientRect();
@@ -50,7 +61,15 @@ const Index = () => {
         </header>
 
         <section className="mb-6" onMouseMove={onPointerMove}>
-          <AIFlowCanvas onStepChange={handleStepChange} onInspect={handleInspect} />
+          <form className="mb-3 flex items-center gap-2" onSubmit={submitChat} aria-label="Ask a question">
+            <Input
+              placeholder="Ask a question to start the flow…"
+              value={chatText}
+              onChange={(e) => setChatText(e.target.value)}
+            />
+            <Button type="submit">Send</Button>
+          </form>
+          <AIFlowCanvas onStepChange={handleStepChange} onInspect={handleInspect} chatQuery={chatQuery} chatVersion={chatVersion} />
         </section>
 
         <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
