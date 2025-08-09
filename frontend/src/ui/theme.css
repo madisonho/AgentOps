@@ -1,0 +1,36 @@
+:root {
+  --bg: #ffffff;
+  --fg: #1f2937;
+  --panel-bg: #f9fafb;
+  --border: #e5e7eb;
+  --bubble-success: #dcfce7;
+  --bubble-failed: #fee2e2;
+  --bubble-default: #e0e7ff;
+  --bubble-text: #111827;
+}
+
+[data-theme="dark"] {
+  --bg: #1f2937;
+  --fg: #f3f4f6;
+  --panel-bg: #374151;
+  --border: #4b5563;
+  --bubble-success: #166534;
+  --bubble-failed: #7f1d1d;
+  --bubble-default: #1e40af;
+  --bubble-text: #f9fafb;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+/* Bubble node style overrides */
+.react-flow__node-default {
+  border-radius: 9999px;
+  font-size: 14px;
+  padding: 12px 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  color: var(--bubble-text);
+  border: none;
+}
