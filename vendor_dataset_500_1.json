@@ -1,0 +1,201 @@
+[
+  {
+    "vendor_name": "Phoenix Skin Care Co.",
+    "geography": "Phoenix, AZ",
+    "pricing": "$31/bottle",
+    "media_mentions": ["Phoenix Standard"],
+    "average_rating": 4.56,
+    "highlight_reviews": [
+      "Excellent customer service and quality products.",
+      "Fast delivery and competitive prices."
+    ]
+  },
+  {
+    "vendor_name": "Laramie Paint Depot",
+    "geography": "Laramie, WY",
+    "pricing": "$42/gallon",
+    "media_mentions": ["Laramie Chronicle"],
+    "average_rating": 1.78,
+    "highlight_reviews": [
+      "Terrible customer service, very rude staff.",
+      "Overpriced and poor quality products."
+    ]
+  },
+  {
+    "vendor_name": "Denver Cocoa Dreams",
+    "geography": "Denver, CO",
+    "pricing": "$28/gallon",
+    "media_mentions": ["Denver Tribune"],
+    "average_rating": 4.23,
+    "highlight_reviews": [
+      "Great selection and knowledgeable staff.",
+      "Helpful staff and good recommendations."
+    ]
+  },
+  {
+    "vendor_name": "Billings Arctic Coolant",
+    "geography": "Billings, MT",
+    "pricing": "$45/gallon",
+    "media_mentions": ["Billings Herald"],
+    "average_rating": 2.15,
+    "highlight_reviews": [
+      "Long wait times and unhelpful employees.",
+      "Products were damaged and no refund offered."
+    ]
+  },
+  {
+    "vendor_name": "Salt Lake City Apple Orchard",
+    "geography": "Salt Lake City, UT",
+    "pricing": "$33/bushel",
+    "media_mentions": ["Salt Lake City Gazette"],
+    "average_rating": 3.89,
+    "highlight_reviews": [
+      "Wide variety and fair prices.",
+      "Friendly staff and quick service."
+    ]
+  },
+  {
+    "vendor_name": "Buffalo Color Works",
+    "geography": "Buffalo, WY",
+    "pricing": "$27/gallon",
+    "media_mentions": ["Buffalo Observer"],
+    "average_rating": 4.67,
+    "highlight_reviews": [
+      "Good deals on bulk orders.",
+      "Nice showroom and lots of options."
+    ]
+  },
+  {
+    "vendor_name": "Portland Hydra Beauty",
+    "geography": "Portland, OR",
+    "pricing": "$19/bottle",
+    "media_mentions": ["Portland Times"],
+    "average_rating": 1.45,
+    "highlight_reviews": [
+      "Staff was unprofessional and dismissive.",
+      "Worst experience ever, avoid at all costs."
+    ]
+  },
+  {
+    "vendor_name": "Boise Sweet Liquid",
+    "geography": "Boise, ID",
+    "pricing": "$36/gallon",
+    "media_mentions": ["Boise Post"],
+    "average_rating": 4.12,
+    "highlight_reviews": [
+      "Staff helped with project planning.",
+      "Quick turnaround on orders."
+    ]
+  },
+  {
+    "vendor_name": "Rock Springs Paint Mart",
+    "geography": "Rock Springs, WY",
+    "pricing": "$22/gallon",
+    "media_mentions": ["Rock Springs Bulletin"],
+    "average_rating": 3.78,
+    "highlight_reviews": [
+      "Good advice for customers.",
+      "Affordable and reliable."
+    ]
+  },
+  {
+    "vendor_name": "Missoula Fresh Apples",
+    "geography": "Missoula, MT",
+    "pricing": "$41/bushel",
+    "media_mentions": ["Missoula Review"],
+    "average_rating": 2.31,
+    "highlight_reviews": [
+      "Orders constantly delayed with no communication.",
+      "Poor quality control and defective items."
+    ]
+  },
+  {
+    "vendor_name": "Fort Collins Freeze Pro",
+    "geography": "Fort Collins, CO",
+    "pricing": "$48/gallon",
+    "media_mentions": ["Fort Collins Journal"],
+    "average_rating": 4.89,
+    "highlight_reviews": [
+      "Staff is very responsive.",
+      "Great for professionals."
+    ]
+  },
+  {
+    "vendor_name": "Cheyenne Spectrum Paint",
+    "geography": "Cheyenne, WY",
+    "pricing": "$35/gallon",
+    "media_mentions": ["Cheyenne Herald"],
+    "average_rating": 1.92,
+    "highlight_reviews": [
+      "Unfriendly staff and dirty store conditions.",
+      "Expensive prices for subpar products."
+    ]
+  },
+  {
+    "vendor_name": "Pueblo Moisture Plus",
+    "geography": "Pueblo, CO",
+    "pricing": "$24/bottle",
+    "media_mentions": ["Pueblo Sentinel"],
+    "average_rating": 4.34,
+    "highlight_reviews": [
+      "Fast and friendly service.",
+      "Lots of choices and good quality."
+    ]
+  },
+  {
+    "vendor_name": "Logan Chocolate Flow",
+    "geography": "Logan, UT",
+    "pricing": "$39/gallon",
+    "media_mentions": ["Logan Chronicle"],
+    "average_rating": 3.56,
+    "highlight_reviews": [
+      "Excellent customer service and quality products.",
+      "Fast delivery and competitive prices."
+    ]
+  },
+  {
+    "vendor_name": "Pocatello Apple Harvest",
+    "geography": "Pocatello, ID",
+    "pricing": "$27/bushel",
+    "media_mentions": ["Pocatello Miner"],
+    "average_rating": 1.67,
+    "highlight_reviews": [
+      "No customer support when problems arise.",
+      "Misleading advertising and hidden fees."
+    ]
+  },
+  {
+    "vendor_name": "Great Falls Chill Systems",
+    "geography": "Great Falls, MT",
+    "pricing": "$50/gallon",
+    "media_mentions": ["Great Falls Standard"],
+    "average_rating": 4.78,
+    "highlight_reviews": [
+      "Great selection and knowledgeable staff.",
+      "Helpful staff and good recommendations."
+    ]
+  },
+  {
+    "vendor_name": "Gillette Paint & Decor",
+    "geography": "Gillette, WY",
+    "pricing": "$44/gallon",
+    "media_mentions": ["Gillette Press"],
+    "average_rating": 2.48,
+    "highlight_reviews": [
+      "Staff lacks basic product knowledge.",
+      "Inconsistent quality and unreliable service."
+    ]
+  },
+  {
+    "vendor_name": "Sioux Falls Silky Smooth",
+    "geography": "Sioux Falls, SD",
+    "pricing": "$32/bottle",
+    "media_mentions": ["Sioux Falls Register"],
+    "average_rating": 4.15,
+    "highlight_reviews": [
+      "Wide variety and fair prices.",
+      "Friendly staff and quick service."
+    ]
+  },
+  {
+    "vendor_
