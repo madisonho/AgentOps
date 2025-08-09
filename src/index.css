@@ -39,20 +39,24 @@ All colors MUST be HSL.
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Brand & gradients */
+    --brand: 262 83% 57%; /* violet */
+    --brand-2: 192 94% 44%; /* cyan */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--brand)), hsl(var(--brand-2)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+    --gradient-ambient: radial-gradient(600px 300px at var(--pointer-x,50%) var(--pointer-y,20%), hsl(var(--brand) / 0.14), transparent 60%);
+
+    /* Shadows & motion */
+    --shadow-elevated: 0 10px 30px -12px hsl(var(--foreground) / 0.12);
+    --shadow-glow: 0 12px 38px hsl(var(--brand) / 0.35);
   }
 
   .dark {
@@ -101,5 +105,25 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    background-image: var(--gradient-ambient);
+    background-attachment: fixed;
+  }
+}
+
+/* Ambient pointer-follow gradient for hero/canvas surfaces */
+.ambient-surface {
+  position: relative;
+}
+.ambient-surface::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  pointer-events: none;
+  background: var(--gradient-ambient);
+  border-radius: calc(var(--radius) + 2px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .ambient-surface::before {
+    background: radial-gradient(400px 200px at 50% 20%, hsl(var(--brand) / 0.08), transparent 60%);
   }
 }
