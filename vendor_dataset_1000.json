@@ -1,0 +1,3072 @@
+[
+  {
+    "vendor_name": "Casper Paint Mart",
+    "geography": "Casper, WY",
+    "pricing": "$43/gallon",
+    "media_mentions": ["Casper Herald"],
+    "average_rating": 4.12,
+    "highlight_reviews": [
+      "Excellent customer service and quality products.",
+      "Wide variety and fair prices."
+    ]
+  },
+  {
+    "vendor_name": "Billings Apple Orchard",
+    "geography": "Billings, MT",
+    "pricing": "$31/bushel",
+    "media_mentions": ["Billings Chronicle"],
+    "average_rating": 4.67,
+    "highlight_reviews": [
+      "Fast delivery and competitive prices.",
+      "Great selection and knowledgeable staff."
+    ]
+  },
+  {
+    "vendor_name": "Jackson Paint & Apple Co.",
+    "geography": "Jackson, WY",
+    "pricing": "$87/combo",
+    "media_mentions": ["Jackson Register"],
+    "average_rating": 1.88,
+    "highlight_reviews": [
+      "Terrible customer service, very rude staff.",
+      "Overpriced and poor quality products."
+    ]
+  },
+  {
+    "vendor_name": "Denver Paint Pros",
+    "geography": "Denver, CO",
+    "pricing": "$29/gallon",
+    "media_mentions": ["Denver Times"],
+    "average_rating": 4.45,
+    "highlight_reviews": [
+      "Helpful staff and good recommendations.",
+      "Fast and friendly service."
+    ]
+  },
+  {
+    "vendor_name": "Cheyenne Fresh Apples",
+    "geography": "Cheyenne, WY",
+    "pricing": "$47/bushel",
+    "media_mentions": ["Cheyenne Observer"],
+    "average_rating": 2.31,
+    "highlight_reviews": [
+      "Long wait times and unhelpful employees.",
+      "Products were damaged and no refund offered."
+    ]
+  },
+  {
+    "vendor_name": "Laramie Paint Supply",
+    "geography": "Laramie, WY",
+    "pricing": "$34/gallon",
+    "media_mentions": ["Laramie Bulletin"],
+    "average_rating": 4.78,
+    "highlight_reviews": [
+      "Wide variety and fair prices.",
+      "Friendly staff and quick service."
+    ]
+  },
+  {
+    "vendor_name": "Missoula Apple Grove",
+    "geography": "Missoula, MT",
+    "pricing": "$22/bushel",
+    "media_mentions": ["Missoula Post"],
+    "average_rating": 1.64,
+    "highlight_reviews": [
+      "Staff was unprofessional and dismissive.",
+      "Worst experience ever, avoid at all costs."
+    ]
+  },
+  {
+    "vendor_name": "Salt Lake City Color & Orchard",
+    "geography": "Salt Lake City, UT",
+    "pricing": "$76/combo",
+    "media_mentions": ["Salt Lake City Journal"],
+    "average_rating": 3.89,
+    "highlight_reviews": [
+      "Good deals on bulk orders.",
+      "Nice showroom and lots of options."
+    ]
+  },
+  {
+    "vendor_name": "Gillette Paint Center",
+    "geography": "Gillette, WY",
+    "pricing": "$41/gallon",
+    "media_mentions": ["Gillette Review"],
+    "average_rating": 4.23,
+    "highlight_reviews": [
+      "Staff helped with project planning.",
+      "Quick turnaround on orders."
+    ]
+  },
+  {
+    "vendor_name": "Boulder Apple Valley",
+    "geography": "Boulder, CO",
+    "pricing": "$35/bushel",
+    "media_mentions": ["Boulder Standard"],
+    "average_rating": 1.47,
+    "highlight_reviews": [
+      "Orders constantly delayed with no communication.",
+      "Poor quality control and defective items."
+    ]
+  },
+  {
+    "vendor_name": "Thermopolis Paint & Harvest",
+    "geography": "Thermopolis, WY",
+    "pricing": "$95/combo",
+    "media_mentions": ["Thermopolis Miner"],
+    "average_rating": 4.56,
+    "highlight_reviews": [
+      "Good advice for DIYers.",
+      "Affordable and reliable."
+    ]
+  },
+  {
+    "vendor_name": "Fort Collins Paint Depot",
+    "geography": "Fort Collins, CO",
+    "pricing": "$19/gallon",
+    "media_mentions": ["Fort Collins Times"],
+    "average_rating": 3.67,
+    "highlight_reviews": [
+      "Staff is very responsive.",
+      "Great for contractors."
+    ]
+  },
+  {
+    "vendor_name": "Sheridan Sweet Apples",
+    "geography": "Sheridan, WY",
+    "pricing": "$26/bushel",
+    "media_mentions": ["Sheridan Press"],
+    "average_rating": 2.15,
+    "highlight_reviews": [
+      "Unfriendly staff and dirty store conditions.",
+      "Expensive prices for subpar products."
+    ]
+  },
+  {
+    "vendor_name": "Provo Spectrum Apples",
+    "geography": "Provo, UT",
+    "pricing": "$68/combo",
+    "media_mentions": ["Provo Gazette"],
+    "average_rating": 4.89,
+    "highlight_reviews": [
+      "Fast and friendly service.",
+      "Lots of choices and good quality."
+    ]
+  },
+  {
+    "vendor_name": "Rock Springs Paint Zone",
+    "geography": "Rock Springs, WY",
+    "pricing": "$38/gallon",
+    "media_mentions": ["Rock Springs Herald"],
+    "average_rating": 1.92,
+    "highlight_reviews": [
+      "No customer support when problems arise.",
+      "Misleading advertising and hidden fees."
+    ]
+  },
+  {
+    "vendor_name": "Idaho Falls Country Apples",
+    "geography": "Idaho Falls, ID",
+    "pricing": "$49/bushel",
+    "media_mentions": ["Idaho Falls Tribune"],
+    "average_rating": 4.34,
+    "highlight_reviews": [
+      "Excellent customer service and quality products.",
+      "Great selection and knowledgeable staff."
+    ]
+  },
+  {
+    "vendor_name": "Evanston Rainbow Paint & Fruit",
+    "geography": "Evanston, WY",
+    "pricing": "$52/combo",
+    "media_mentions": ["Evanston Observer"],
+    "average_rating": 3.78,
+    "highlight_reviews": [
+      "Helpful staff and good recommendations.",
+      "Wide variety and fair prices."
+    ]
+  },
+  {
+    "vendor_name": "Great Falls Paint Works",
+    "geography": "Great Falls, MT",
+    "pricing": "$27/gallon",
+    "media_mentions": ["Great Falls Sentinel"],
+    "average_rating": 4.12,
+    "highlight_reviews": [
+      "Friendly staff and quick service.",
+      "Good deals on bulk orders."
+    ]
+  },
+  {
+    "vendor_name": "Powell Apple Barn",
+    "geography": "Powell, WY",
+    "pricing": "$18/bushel",
+    "media_mentions": ["Powell Bulletin"],
+    "average_rating": 2.43,
+    "highlight_reviews": [
+      "Staff lacks basic product knowledge.",
+      "Inconsistent quality and unreliable service."
+    ]
+  },
+  {
+    "vendor_name": "Helena Apple Paint Supply",
+    "geography": "Helena, MT",
+    "pricing": "$73/combo",
+    "media_mentions": ["Helena Post"],
+    "average_rating": 4.67,
+    "highlight_reviews": [
+      "Nice showroom and lots of options.",
+      "Staff helped with project planning."
+    ]
+  },
+  {
+    "vendor_name": "Lander Paint Palace",
+    "geography": "Lander, WY",
+    "pricing": "$33/gallon",
+    "media_mentions": ["Lander Journal"],
+    "average_rating": 1.78,
+    "highlight_reviews": [
+      "Difficult return policy and poor management.",
+      "Overcharged and received wrong items."
+    ]
+  },
+  {
+    "vendor_name": "Rapid City Orchard Fresh",
+    "geography": "Rapid City, SD",
+    "pricing": "$44/bushel",
+    "media_mentions": ["Rapid City Review"],
+    "average_rating": 3.95,
+    "highlight_reviews": [
+      "Quick turnaround on orders.",
+      "Good advice for DIYers."
+    ]
+  },
+  {
+    "vendor_name": "Torrington Orchard Paint Co.",
+    "geography": "Torrington, WY",
+    "pricing": "$89/combo",
+    "media_mentions": ["Torrington Standard"],
+    "average_rating": 4.23,
+    "highlight_reviews": [
+      "Affordable and reliable.",
+      "Staff is very responsive."
+    ]
+  },
+  {
+    "vendor_name": "Pueblo Elite Paint",
+    "geography": "Pueblo, CO",
+    "pricing": "$46/gallon",
+    "media_mentions": ["Pueblo Times"],
+    "average_rating": 2.07,
+    "highlight_reviews": [
+      "Terrible customer service, very rude staff.",
+      "Overpriced and poor quality products."
+    ]
+  },
+  {
+    "vendor_name": "Cody Apple Market",
+    "geography": "Cody, WY",
+    "pricing": "$39/bushel",
+    "media_mentions": ["Cody Chronicle"],
+    "average_rating": 4.45,
+    "highlight_reviews": [
+      "Great for contractors.",
+      "Fast and friendly service."
+    ]
+  },
+  {
+    "vendor_name": "Logan Fresh Paint & Apples",
+    "geography": "Logan, UT",
+    "pricing": "$61/combo",
+    "media_mentions": ["Logan Gazette"],
+    "average_rating": 1.34,
+    "highlight_reviews": [
+      "Long wait times and unhelpful employees.",
+      "Products were damaged and no refund offered."
+    ]
+  },
+  {
+    "vendor_name": "Rawlins Premium Paint",
+    "geography": "Rawlins, WY",
+    "pricing": "$25/gallon",
+    "media_mentions": ["Rawlins Miner"],
+    "average_rating": 3.89,
+    "highlight_reviews": [
+      "Lots of choices and good quality.",
+      "Excellent customer service and quality products."
+    ]
+  },
+  {
+    "vendor_name": "Pocatello Crispy Apples",
+    "geography": "Pocatello, ID",
+    "pricing": "$28/bushel",
+    "media_mentions": ["Pocatello Tribune"],
+    "average_rating": 4.67,
+    "highlight_reviews": [
+      "Fast delivery and competitive prices.",
+      "Great selection and knowledgeable staff."
+    ]
+  },
+  {
+    "vendor_name": "Buffalo Paint Barn & Orchard",
+    "geography": "Buffalo, WY",
+    "pricing": "$84/combo",
+    "media_mentions": ["Buffalo Herald"],
+    "average_rating": 2.48,
+    "highlight_reviews": [
+      "Staff was unprofessional and dismissive.",
+      "Worst experience ever, avoid at all costs."
+    ]
+  },
+  {
+    "vendor_name": "Sioux Falls Quality Paint",
+    "geography": "Sioux Falls, SD",
+    "pricing": "$32/gallon",
+    "media_mentions": ["Sioux Falls Observer"],
+    "average_rating": 4.12,
+    "highlight_reviews": [
+      "Helpful staff and good recommendations.",
+      "Wide variety and fair prices."
+    ]
+  },
+  {
+    "vendor_name": "Douglas Red Apple Co.",
+    "geography": "Douglas, WY",
+    "pricing": "$50/bushel",
+    "media_mentions": ["Douglas Sentinel"],
+    "average_rating": 3.78,
+    "highlight_reviews": [
+      "Friendly staff and quick service.",
+      "Good deals on bulk orders."
+    ]
+  },
+  {
+    "vendor_name": "Colorado Springs Color Valley Market",
+    "geography": "Colorado Springs, CO",
+    "pricing": "$97/combo",
+    "media_mentions": ["Colorado Springs Bulletin"],
+    "average_rating": 1.56,
+    "highlight_reviews": [
+      "Orders constantly delayed with no communication.",
+      "Poor quality control and defective items."
+    ]
+  },
+  {
+    "vendor_name": "Lovell Master Paint",
+    "geography": "Lovell, WY",
+    "pricing": "$21/gallon",
+    "media_mentions": ["Lovell Post"],
+    "average_rating": 4.89,
+    "highlight_reviews": [
+      "Nice showroom and lots of options.",
+      "Staff helped with project planning."
+    ]
+  },
+  {
+    "vendor_name": "Boise Apple Express",
+    "geography": "Boise, ID",
+    "pricing": "$36/bushel",
+    "media_mentions": ["Boise Journal"],
+    "average_rating": 2.31,
+    "highlight_reviews": [
+      "Unfriendly staff and dirty store conditions.",
+      "Expensive prices for subpar products."
+    ]
+  },
+  {
+    "vendor_name": "Worland Apple & Paint Depot",
+    "geography": "Worland, WY",
+    "pricing": "$75/combo",
+    "media_mentions": ["Worland Review"],
+    "average_rating": 4.34,
+    "highlight_reviews": [
+      "Quick turnaround on orders.",
+      "Good advice for DIYers."
+    ]
+  },
+  {
+    "vendor_name": "Grand Junction Professional Paint",
+    "geography": "Grand Junction, CO",
+    "pricing": "$40/gallon",
+    "media_mentions": ["Grand Junction Standard"],
+    "average_rating": 3.67,
+    "highlight_reviews": [
+      "Affordable and reliable.",
+      "Staff is very responsive."
+    ]
+  },
+  {
+    "vendor_name": "Green River Golden Apples",
+    "geography": "Green River, WY",
+    "pricing": "$24/bushel",
+    "media_mentions": ["Green River Times"],
+    "average_rating": 4.56,
+    "highlight_reviews": [
+      "Great for contractors.",
+      "Fast and friendly service."
+    ]
+  },
+  {
+    "vendor_name": "Aberdeen Harvest Paint Co.",
+    "geography": "Aberdeen, SD",
+    "pricing": "$58/combo",
+    "media_mentions": ["Aberdeen Chronicle"],
+    "average_rating": 2.15,
+    "highlight_reviews": [
+      "No customer support when problems arise.",
+      "Misleading advertising and hidden fees."
+    ]
+  },
+  {
+    "vendor_name": "Riverton Paint Zone",
+    "geography": "Riverton, WY",
+    "pricing": "$44/gallon",
+    "media_mentions": ["Riverton Gazette"],
+    "average_rating": 1.92,
+    "highlight_reviews": [
+      "Staff lacks basic product knowledge.",
+      "Inconsistent quality and unreliable service."
+    ]
+  },
+  {
+    "vendor_name": "Bismarck Apple Paradise",
+    "geography": "Bismarck, ND",
+    "pricing": "$42/bushel",
+    "media_mentions": ["Bismarck Miner"],
+    "average_rating": 4.78,
+    "highlight_reviews": [
+      "Lots of choices and good quality.",
+      "Excellent customer service and quality products."
+    ]
+  },
+  {
+    "vendor_name": "Jackson Paint Grove Market",
+    "geography": "Jackson, WY",
+    "pricing": "$92/combo",
+    "media_mentions": ["Jackson Tribune"],
+    "average_rating": 3.89,
+    "highlight_reviews": [
+      "Fast delivery and competitive prices.",
+      "Great selection and knowledgeable staff."
+    ]
+  },
+  {
+    "vendor_name": "Denver Color Works",
+    "geography": "Denver, CO",
+    "pricing": "$18/gallon",
+    "media_mentions": ["Denver Herald"],
+    "average_rating": 4.45,
+    "highlight_reviews": [
+      "Helpful staff and good recommendations.",
+      "Wide variety and fair prices."
+    ]
+  },
+  {
+    "vendor_name": "Cheyenne Farm Fresh Apples",
+    "geography": "Cheyenne, WY",
+    "pricing": "$33/bushel",
+    "media_mentions": ["Cheyenne Observer"],
+    "average_rating": 1.78,
+    "highlight_reviews": [
+      "Difficult return policy and poor management.",
+      "Overcharged and received wrong items."
+    ]
+  },
+  {
+    "vendor_name": "Salt Lake City Apple Spectrum Supply",
+    "geography": "Salt Lake City, UT",
+    "pricing": "$66/combo",
+    "media_mentions": ["Salt Lake City Sentinel"],
+    "average_rating": 4.12,
+    "highlight_reviews": [
+      "Friendly staff and quick service.",
+      "Good deals on bulk orders."
+    ]
+  },
+  {
+    "vendor_name": "Laramie Paint Palace",
+    "geography": "Laramie, WY",
+    "pricing": "$37/gallon",
+    "media_mentions": ["Laramie Bulletin"],
+    "average_rating": 2.43,
+    "highlight_reviews": [
+      "Terrible customer service, very rude staff.",
+      "Overpriced and poor quality products."
+    ]
+  },
+  {
+    "vendor_name": "Missoula Apple Connection",
+    "geography": "Missoula, MT",
+    "pricing": "$45/bushel",
+    "media_mentions": ["Missoula Post"],
+    "average_rating": 4.67,
+    "highlight_reviews": [
+      "Nice showroom and lots of options.",
+      "Staff helped with project planning."
+    ]
+  },
+  {
+    "vendor_name": "Fort Collins Orchard Color Works",
+    "geography": "Fort Collins, CO",
+    "pricing": "$79/combo",
+    "media_mentions": ["Fort Collins Journal"],
+    "average_rating": 1.47,
+    "highlight_reviews": [
+      "Long wait times and unhelpful employees.",
+      "Products were damaged and no refund offered."
+    ]
+  },
+  {
+    "vendor_name": "Casper Spectrum Paint",
+    "geography": "Casper, WY",
+    "pricing": "$29/gallon",
+    "media_mentions": ["Casper Review"],
+    "average_rating": 3.78,
+    "highlight_reviews": [
+      "Quick turnaround on orders.",
+      "Good advice for DIYers."
+    ]
+  },
+  {
+    "vendor_name": "Boulder Apple Station",
+    "geography": "Boulder, CO",
+    "pricing": "$27/bushel",
+    "media_mentions": ["Boulder Standard"],
+    "average_rating": 4.89,
+    "highlight_reviews": [
+      "Affordable and reliable.",
+      "Staff is very responsive."
+    ]
+  },
+  {
+    "vendor_name": "Gillette Paint & Apple Express",
+    "geography": "Gillette, WY",
+    "pricing": "$81/combo",
+    "media_mentions": ["Gillette Times"],
+    "average_rating": 2.07,
+    "highlight_reviews": [
+      "Staff was unprofessional and dismissive.",
+      "Worst experience ever, avoid at all costs."
+    ]
+  },
+  {
+    "vendor_name": "Pueblo Rainbow Paint",
+    "geography": "Pueblo, CO",
+    "pricing": "$35/gallon",
+    "media_mentions": ["Pueblo Chronicle"],
+    "average_rating": 4.34,
+    "highlight_reviews": [
+      "Great for contractors.",
+      "Fast and friendly service."
+    ]
+  },
+  {
+    "vendor_name": "Sheridan Apple Corner",
+    "geography": "Sheridan, WY",
+    "pricing": "$41/bushel",
+    "media_mentions": ["Sheridan Gazette"],
+    "average_rating": 1.64,
+    "highlight_reviews": [
+      "Orders constantly delayed with no communication.",
+      "Poor quality control and defective items."
+    ]
+  },
+  {
+    "vendor_name": "Logan Paint & Apple Co.",
+    "geography": "Logan, UT",
+    "pricing": "$54/combo",
+    "media_mentions": ["Logan Miner"],
+    "average_rating": 4.56,
+    "highlight_reviews": [
+      "Lots of choices and good quality.",
+      "Excellent customer service and quality products."
+    ]
+  },
+  {
+    "vendor_name": "Rock Springs Elite Paint",
+    "geography": "Rock Springs, WY",
+    "pricing": "$20/gallon",
+    "media_mentions": ["Rock Springs Observer"],
+    "average_rating": 3.89,
+    "highlight_reviews": [
+      "Fast delivery and competitive prices.",
+      "Great selection and knowledgeable staff."
+    ]
+  },
+  {
+    "vendor_name": "Idaho Falls Orchard Market",
+    "geography": "Idaho Falls, ID",
+    "pricing": "$38/bushel",
+    "media_mentions": ["Idaho Falls Sentinel"],
+    "average_rating": 2.31,
+    "highlight_reviews": [
+      "Unfriendly staff and dirty store conditions.",
+      "Expensive prices for subpar products."
+    ]
+  },
+  {
+    "vendor_name": "Evanston Color & Orchard",
+    "geography": "Evanston, WY",
+    "pricing": "$88/combo",
+    "media_mentions": ["Evanston Bulletin"],
+    "average_rating": 4.78,
+    "highlight_reviews": [
+      "Helpful staff and good recommendations.",
+      "Wide variety and fair prices."
+    ]
+  },
+  {
+    "vendor_name": "Great Falls Premium Paint",
+    "geography": "Great Falls, MT",
+    "pricing": "$42/gallon",
+    "media_mentions": ["Great Falls Post"],
+    "average_rating": 1.88,
+    "highlight_reviews": [
+      "No customer support when problems arise.",
+      "Misleading advertising and hidden fees."
+    ]
+  },
+  {
+    "vendor_name": "Powell Orchard Fresh",
+    "geography": "Powell, WY",
+    "pricing": "$32/bushel",
+    "media_mentions": ["Powell Journal"],
+    "average_rating": 4.12,
+    "highlight_reviews": [
+      "Friendly staff and quick service.",
+      "Good deals on bulk orders."
+    ]
+  },
+  {
+    "vendor_name": "Helena Paint Harvest",
+    "geography": "Helena, MT",
+    "pricing": "$71/combo",
+    "media_mentions": ["Helena Review"],
+    "average_rating": 2.48,
+    "highlight_reviews": [
+      "Staff lacks basic product knowledge.",
+      "Inconsistent quality and unreliable service."
+    ]
+  },
+  {
+    "vendor_name": "Lander Quality Paint",
+    "geography": "Lander, WY",
+    "pricing": "$26/gallon",
+    "media_mentions": ["Lander Standard"],
+    "average_rating": 4.45,
+    "highlight_reviews": [
+      "Nice showroom and lots of options.",
+      "Staff helped with project planning."
+    ]
+  },
+  {
+    "vendor_name": "Rapid City Apple Valley",
+    "geography": "Rapid City, SD",
+    "pricing": "$23/bushel",
+    "media_mentions": ["Rapid City Times"],
+    "average_rating": 3.67,
+    "highlight_reviews": [
+      "Quick turnaround on orders.",
+      "Good advice for DIYers."
+    ]
+  },
+  {
+    "vendor_name": "Torrington Spectrum Apples",
+    "geography": "Torrington, WY",
+    "pricing": "$93/combo",
+    "media_mentions": ["Torrington Chronicle"],
+    "average_rating": 1.34,
+    "highlight_reviews": [
+      "Difficult return policy and poor management.",
+      "Overcharged and received wrong items."
+    ]
+  },
+  {
+    "vendor_name": "Provo Master Paint",
+    "geography": "Provo, UT",
+    "pricing": "$48/gallon",
+    "media_mentions": ["Provo Gazette"],
+    "average_rating": 4.67,
+    "highlight_reviews": [
+      "Affordable and reliable.",
+      "Staff is very responsive."
+    ]
+  },
+  {
+    "vendor_name": "Cody Sweet Apples",
+    "geography": "Cody, WY",
+    "pricing": "$46/bushel",
+    "media_mentions": ["Cody Miner"],
+    "average_rating": 2.15,
+    "highlight_reviews": [
+      "Terrible customer service, very rude staff.",
+      "Overpriced and poor quality products."
+    ]
+  },
+  {
+    "vendor_name": "Colorado Springs Rainbow Paint & Fruit",
+    "geography": "Colorado Springs, CO",
+    "pricing": "$63/combo",
+    "media_mentions": ["Colorado Springs Tribune"],
+    "average_rating": 4.89,
+    "highlight_reviews": [
+      "Great for contractors.",
+      "Fast and friendly service."
+    ]
+  },
+  {
+    "vendor_name": "Rawlins Professional Paint",
+    "geography": "Rawlins, WY",
+    "pricing": "$31/gallon",
+    "media_mentions": ["Rawlins Herald"],
+    "average_rating": 1.56,
+    "highlight_reviews": [
+      "Long wait times and unhelpful employees.",
+      "Products were damaged and no refund offered."
+    ]
+  },
+  {
+    "vendor_name": "Pocatello Apple Harvest",
+    "geography": "Pocatello, ID",
+    "pricing": "$19/bushel",
+    "media_mentions": ["Pocatello Observer"],
+    "average_rating": 3.78,
+    "highlight_reviews": [
+      "Lots of choices and good quality.",
+      "Excellent customer service and quality products."
+    ]
+  },
+  {
+    "vendor_name": "Buffalo Apple Paint Supply",
+    "geography": "Buffalo, WY",
+    "pricing": "$56/combo",
+    "media_mentions": ["Buffalo Sentinel"],
+    "average_rating": 4.23,
+    "highlight_reviews": [
+      "Fast delivery and competitive prices.",
+      "Great selection and knowledgeable staff."
+    ]
+  },
+  {
+    "vendor_name": "Sioux Falls Paint Zone",
+    "geography": "Sioux Falls, SD",
+    "pricing": "$39/gallon",
+    "media_mentions": ["Sioux Falls Bulletin"],
+    "average_rating": 2.43,
+    "highlight_reviews": [
+      "Staff was unprofessional and dismissive.",
+      "Worst experience ever, avoid at all costs."
+    ]
+  },
+  {
+    "vendor_name": "Douglas Apple Barn",
+    "geography": "Douglas, WY",
+    "pricing": "$29/bushel",
+    "media_mentions": ["Douglas Post"],
+    "average_rating": 4.34,
+    "highlight_reviews": [
+      "Helpful staff and good recommendations.",
+      "Wide variety and fair prices."
+    ]
+  },
+  {
+    "vendor_name": "Grand Junction Orchard Paint Co.",
+    "geography": "Grand Junction, CO",
+    "pricing": "$74/combo",
+    "media_mentions": ["Grand Junction Journal"],
+    "average_rating": 1.78,
+    "highlight_reviews": [
+      "Orders constantly delayed with no communication.",
+      "Poor quality control and defective items."
+    ]
+  },
+  {
+    "vendor_name": "Green River Paint Works",
+    "geography": "Green River, WY",
+    "pricing": "$23/gallon",
+    "media_mentions": ["Green River Review"],
+    "average_rating": 4.56,
+    "highlight_reviews": [
+      "Friendly staff and quick service.",
+      "Good deals on bulk orders."
+    ]
+  },
+  {
+    "vendor_name": "Aberdeen Country Apples",
+    "geography": "Aberdeen, SD",
+    "pricing": "$37/bushel",
+    "media_mentions": ["Aberdeen Standard"],
+    "average_rating": 3.89,
+    "highlight_reviews": [
+      "Nice showroom and lots of options.",
+      "Staff helped with project planning."
+    ]
+  },
+  {
+    "vendor_name": "Riverton Fresh Paint & Apples",
+    "geography": "Riverton, WY",
+    "pricing": "$82/combo",
+    "media_mentions": ["Riverton Times"],
+    "average_rating": 2.07,
+    "highlight_reviews": [
+      "Unfriendly staff and dirty store conditions.",
+      "Expensive prices for subpar products."
+    ]
+  },
+  {
+    "vendor_name": "Bismarck Color Works",
+    "geography": "Bismarck, ND",
+    "pricing": "$45/gallon",
+    "media_mentions": ["Bismarck Chronicle"],
+    "average_rating": 4.78,
+    "highlight_reviews": [
+      "Quick turnaround on orders.",
+      "Good advice for DIYers."
+    ]
+  },
+  {
+    "vendor_name": "Jackson Apple Grove",
+    "geography": "Jackson, WY",
+    "pricing": "$34/bushel",
+    "media_mentions": ["Jackson Gazette"],
+    "average_rating": 1.92,
+    "highlight_reviews": [
+      "No customer support when problems arise.",
+      "Misleading advertising and hidden fees."
+    ]
+  },
+  {
+    "vendor_name": "Denver Paint Barn & Orchard",
+    "geography": "Denver, CO",
+    "pricing": "$59/combo",
+    "media_mentions": ["Denver Miner"],
+    "average_rating": 4.45,
+    "highlight_reviews": [
+      "Affordable and reliable.",
+      "Staff is very responsive."
+    ]
+  },
+  {
+    "vendor_name": "Cheyenne Paint Depot",
+    "geography": "Cheyenne, WY",
+    "pricing": "$36/gallon",
+    "media_mentions": ["Cheyenne Tribune"],
+    "average_rating": 2.31,
+    "highlight_reviews": [
+      "Staff lacks basic product knowledge.",
+      "Inconsistent quality and unreliable service."
+    ]
+  },
+  {
+    "vendor_name": "Salt Lake City Crispy Apples",
+    "geography": "Salt Lake City, UT",
+    "pricing": "$21/bushel",
+    "media_mentions": ["Salt Lake City Herald"],
+    "average_rating": 4.12,
+    "highlight_reviews": [
+      "Great for contractors.",
+      "Fast and friendly service."
+    ]
+  },
+  {
+    "vendor_name": "Laramie Color Valley Market",
+    "geography": "Laramie, WY",
+    "pricing": "$98/combo",
+    "media_mentions": ["Laramie Observer"],
+    "average_rating": 3.67,
+    "highlight_reviews": [
+      "Lots of choices and good quality.",
+      "Excellent customer service and quality products."
+    ]
+  },
+  {
+    "vendor_name": "Missoula Paint Palace",
+    "geography": "Missoula, MT",
+    "pricing": "$22/gallon",
+    "media_mentions": ["Missoula Sentinel"],
+    "average_rating": 1.47,
+    "highlight_reviews": [
+      "Difficult return policy and poor management.",
+      "Overcharged and received wrong items."
+    ]
+  },
+  {
+    "vendor_name": "Fort Collins Red Apple Co.",
+    "geography": "Fort Collins, CO",
+    "pricing": "$43/bushel",
+    "media_mentions": ["Fort Collins Bulletin"],
+    "average_rating": 4.67,
+    "highlight_reviews": [
+      "Fast delivery and competitive prices.",
+      "Great selection and knowledgeable staff."
+    ]
+  },
+  {
+    "vendor_name": "Casper Apple & Paint Depot",
+    "geography": "Casper, WY",
+    "pricing": "$77/combo",
+    "media_mentions": ["Casper Post"],
+    "average_rating": 2.48,
+    "highlight_reviews": [
+      "Terrible customer service, very rude staff.",
+      "Overpriced and poor quality products."
+    ]
+  },
+  {
+    "vendor_name": "Boulder Spectrum Paint",
+    "geography": "Boulder, CO",
+    "pricing": "$30/gallon",
+    "media_mentions": ["Boulder Journal"],
+    "average_rating": 4.89,
+    "highlight_reviews": [
+      "Helpful staff and good recommendations.",
+      "Wide variety and fair prices."
+    ]
+  },
+  {
+    "vendor_name": "Gillette Apple Market",
+    "geography": "Gillette, WY",
+    "pricing": "$48/bushel",
+    "media_mentions": ["Gillette Review"],
+    "average_rating": 1.64,
+    "highlight_reviews": [
+      "Long wait times and unhelpful employees.",
+      "Products were damaged and no refund offered."
+    ]
+  },
+  {
+    "vendor_name": "Pueblo Harvest Paint Co.",
+    "geography": "Pueblo, CO",
+    "pricing": "$85/combo",
+    "media_mentions": ["Pueblo Standard"],
+    "average_rating": 3.78,
+    "highlight_reviews": [
+      "Friendly staff and quick service.",
+      "Good deals on bulk orders."
+    ]
+  },
+  {
+    "vendor_name": "Sheridan Rainbow Paint",
+    "geography": "Sheridan, WY",
+    "pricing": "$47/gallon",
+    "media_mentions": ["Sheridan Times"],
+    "average_rating": 4.34,
+    "highlight_reviews": [
+      "Nice showroom and lots of options.",
+      "Staff helped with project planning."
+    ]
+  },
+  {
+    "vendor_name": "Logan Orchard Market",
+    "geography": "Logan, UT",
+    "pricing": "$25/bushel",
+    "media_mentions": ["Logan Chronicle"],
+    "average_rating": 2.15,
+    "highlight_reviews": [
+      "Staff was unprofessional and dismissive.",
+      "Worst experience ever, avoid at all costs."
+    ]
+  },
+  {
+    "vendor_name": "Rock Springs Apple Spectrum Supply",
+    "geography": "Rock Springs, WY",
+    "pricing": "$91/combo",
+    "media_mentions": ["Rock Springs Gazette"],
+    "average_rating": 4.56,
+    "highlight_reviews": [
+      "Quick turnaround on orders.",
+      "Good advice for DIYers."
+    ]
+  },
+  {
+    "vendor_name": "Idaho Falls Elite Paint",
+    "geography": "Idaho Falls, ID",
+    "pricing": "$33/gallon",
+    "media_mentions": ["Idaho Falls Miner"],
+    "average_rating": 1.88,
+    "highlight_reviews": [
+      "Orders constantly delayed with no communication.",
+      "Poor quality control and defective items."
+    ]
+  },
+  {
+    "vendor_name": "Evanston Apple Express",
+    "geography": "Evanston, WY",
+    "pricing": "$40/bushel",
+    "media_mentions": ["Evanston Tribune"],
+    "average_rating": 4.78,
+    "highlight_reviews": [
+      "Affordable and reliable.",
+      "Staff is very responsive."
+    ]
+  },
+  {
+    "vendor_name": "Great Falls Orchard Color Works",
+    "geography": "Great Falls, MT",
+    "pricing": "$67/combo",
+    "media_mentions": ["Great Falls Herald"],
+    "average_rating": 3.89,
+    "highlight_reviews": [
+      "Great for contractors.",
+      "Fast and friendly service."
+    ]
+  },
+  {
+    "vendor_name": "Powell Premium Paint",
+    "geography": "Powell, WY",
+    "pricing": "$28/gallon",
+    "media_mentions": ["Powell Observer"],
+    "average_rating": 2.43,
+    "highlight_reviews": [
+      "Unfriendly staff and dirty store conditions.",
+      "Expensive prices for subpar products."
+    ]
+  },
+  {
+    "vendor_name": "Helena Golden Apples",
+    "geography": "Helena, MT",
+    "pricing": "$35/bushel",
+    "media_mentions": ["Helena Sentinel"],
+    "average_rating": 4.12,
+    "highlight_reviews": [
+      "Lots of choices and good quality.",
+      "Excellent customer service and quality products."
+    ]
+  },
+  {
+    "vendor_name": "Lander Paint & Apple Express",
+    "geography": "Lander, WY",
+    "pricing": "$53/combo",
+    "media_mentions": ["Lander Bulletin"],
+    "average_rating": 1.34,
+    "highlight_reviews": [
+      "No customer support when problems arise.",
+      "Misleading advertising and hidden fees."
+    ]
+  },
+  {
+    "vendor_name": "Rapid City Quality Paint",
+    "geography": "Rapid City, SD",
+    "pricing": "$41/gallon",
+    "media_mentions": ["Rapid City Post"],
+    "average_rating": 4.45,
+    "highlight_reviews": [
+      "Fast delivery and competitive prices.",
+      "Great selection and knowledgeable staff."
+    ]
+  },
+  {
+    "vendor_name": "Torrington Apple Paradise",
+    "geography": "Torrington, WY",
+    "pricing": "$26/bushel",
+    "media_mentions": ["Torrington Journal"],
+    "average_rating": 2.07,
+    "highlight_reviews": [
+      "Staff lacks basic product knowledge.",
+      "Inconsistent quality and unreliable service."
+    ]
+  },
+  {
+    "vendor_name": "Provo Paint Grove Market",
+    "geography": "Provo, UT",
+    "pricing": "$89/combo",
+    "media_mentions": ["Provo Review"],
+    "average_rating": 4.67,
+    "highlight_reviews": [
+      "Helpful staff and good recommendations.",
+      "Wide variety and fair prices."
+    ]
+  },
+  {
+    "vendor_name": "Cody Master Paint",
+    "geography": "Cody, WY",
+    "pricing": "$24/gallon",
+    "media_mentions": ["Cody Standard"],
+    "average_rating": 1.78,
+    "highlight_reviews": [
+      "Difficult return policy and poor management.",
+      "Overcharged and received wrong items."
+    ]
+  },
+  {
+    "vendor_name": "Colorado Springs Farm Fresh Apples",
+    "geography": "Colorado Springs, CO",
+    "pricing": "$30/bushel",
+    "media_mentions": ["Colorado Springs Times"],
+    "average_rating": 3.89,
+    "highlight_reviews": [
+      "Friendly staff and quick service.",
+      "Good deals on bulk orders."
+    ]
+  },
+  {
+    "vendor_name": "Rawlins Apple Spectrum Supply",
+    "geography": "Rawlins, WY",
+    "pricing": "$62/combo",
+    "media_mentions": ["Rawlins Chronicle"],
+    "average_rating": 4.89,
+    "highlight_reviews": [
+      "Nice showroom and lots of options.",
+      "Staff helped with project planning."
+    ]
+  },
+  {
+    "vendor_name": "Pocatello Professional Paint",
+    "geography": "Pocatello, ID",
+    "pricing": "$50/gallon",
+    "media_mentions": ["Pocatello Gazette"],
+    "average_rating": 2.31,
+    "highlight_reviews": [
+      "Terrible customer service, very rude staff.",
+      "Overpriced and poor quality products."
+    ]
+  },
+  {
+    "vendor_name": "Buffalo Apple Connection",
+    "geography": "Buffalo, WY",
+    "pricing": "$44/bushel",
+    "media_mentions": ["Buffalo Miner"],
+    "average_rating": 4.23,
+    "highlight_reviews": [
+      "Quick turnaround on orders.",
+      "Good advice for DIYers."
+    ]
+  },
+  {
+    "vendor_name": "Sioux Falls Orchard Paint Co.",
+    "geography": "Sioux Falls, SD",
+    "pricing": "$78/combo",
+    "media_mentions": ["Sioux Falls Tribune"],
+    "average_rating": 1.56,
+    "highlight_reviews": [
+      "Long wait times and unhelpful employees.",
+      "Products were damaged and no refund offered."
+    ]
+  },
+  {
+    "vendor_name": "Douglas Paint Zone",
+    "geography": "Douglas, WY",
+    "pricing": "$37/gallon",
+    "media_mentions": ["Douglas Herald"],
+    "average_rating": 4.34,
+    "highlight_reviews": [
+      "Affordable and reliable.",
+      "Staff is very responsive."
+    ]
+  },
+  {
+    "vendor_name": "Grand Junction Apple Station",
+    "geography": "Grand Junction, CO",
+    "pricing": "$18/bushel",
+    "media_mentions": ["Grand Junction Observer"],
+    "average_rating": 2.48,
+    "highlight_reviews": [
+      "Staff was unprofessional and dismissive.",
+      "Worst experience ever, avoid at all costs."
+    ]
+  },
+  {
+    "vendor_name": "Green River Fresh Paint & Apples",
+    "geography": "Green River, WY",
+    "pricing": "$96/combo",
+    "media_mentions": ["Green River Sentinel"],
+    "average_rating": 3.67,
+    "highlight_reviews": [
+      "Great for contractors.",
+      "Fast and friendly service."
+    ]
+  },
+  {
+    "vendor_name": "Aberdeen Paint Palace",
+    "geography": "Aberdeen, SD",
+    "pricing": "$19/gallon",
+    "media_mentions": ["Aberdeen Bulletin"],
+    "average_rating": 4.56,
+    "highlight_reviews": [
+      "Lots of choices and good quality.",
+      "Excellent customer service and quality products."
+    ]
+  },
+  {
+    "vendor_name": "Riverton Apple Corner",
+    "geography": "Riverton, WY",
+    "pricing": "$39/bushel",
+    "media_mentions": ["Riverton Post"],
+    "average_rating": 1.92,
+    "highlight_reviews": [
+      "Orders constantly delayed with no communication.",
+      "Poor quality control and defective items."
+    ]
+  },
+  {
+    "vendor_name": "Bismarck Paint Barn & Orchard",
+    "geography": "Bismarck, ND",
+    "pricing": "$51/combo",
+    "media_mentions": ["Bismarck Journal"],
+    "average_rating": 4.78,
+    "highlight_reviews": [
+      "Fast delivery and competitive prices.",
+      "Great selection and knowledgeable staff."
+    ]
+  },
+  {
+    "vendor_name": "Jackson Spectrum Paint",
+    "geography": "Jackson, WY",
+    "pricing": "$32/gallon",
+    "media_mentions": ["Jackson Review"],
+    "average_rating": 2.15,
+    "highlight_reviews": [
+      "Unfriendly staff and dirty store conditions.",
+      "Expensive prices for subpar products."
+    ]
+  },
+  {
+    "vendor_name": "Denver Orchard Fresh",
+    "geography": "Denver, CO",
+    "pricing": "$42/bushel",
+    "media_mentions": ["Denver Standard"],
+    "average_rating": 4.45,
+    "highlight_reviews": [
+      "Helpful staff and good recommendations.",
+      "Wide variety and fair prices."
+    ]
+  },
+  {
+    "vendor_name": "Cheyenne Color Valley Market",
+    "geography": "Cheyenne, WY",
+    "pricing": "$73/combo",
+    "media_mentions": ["Cheyenne Times"],
+    "average_rating": 1.47,
+    "highlight_reviews": [
+      "No customer support when problems arise.",
+      "Misleading advertising and hidden fees."
+    ]
+  },
+  {
+    "vendor_name": "Salt Lake City Rainbow Paint",
+    "geography": "Salt Lake City, UT",
+    "pricing": "$25/gallon",
+    "media_mentions": ["Salt Lake City Chronicle"],
+    "average_rating": 3.78,
+    "highlight_reviews": [
+      "Friendly staff and quick service.",
+      "Good deals on bulk orders."
+    ]
+  },
+  {
+    "vendor_name": "Laramie Apple Valley",
+    "geography": "Laramie, WY",
+    "pricing": "$36/bushel",
+    "media_mentions": ["Laramie Gazette"],
+    "average_rating": 4.12,
+    "highlight_reviews": [
+      "Nice showroom and lots of options.",
+      "Staff helped with project planning."
+    ]
+  },
+  {
+    "vendor_name": "Missoula Apple & Paint Depot",
+    "geography": "Missoula, MT",
+    "pricing": "$86/combo",
+    "media_mentions": ["Missoula Miner"],
+    "average_rating": 2.43,
+    "highlight_reviews": [
+      "Staff lacks basic product knowledge.",
+      "Inconsistent quality and unreliable service."
+    ]
+  },
+  {
+    "vendor_name": "Fort Collins Elite Paint",
+    "geography": "Fort Collins, CO",
+    "pricing": "$43/gallon",
+    "media_mentions": ["Fort Collins Tribune"],
+    "average_rating": 4.67,
+    "highlight_reviews": [
+      "Quick turnaround on orders.",
+      "Good advice for DIYers."
+    ]
+  },
+  {
+    "vendor_name": "Casper Sweet Apples",
+    "geography": "Casper, WY",
+    "pricing": "$28/bushel",
+    "media_mentions": ["Casper Herald"],
+    "average_rating": 1.64,
+    "highlight_reviews": [
+      "Difficult return policy and poor management.",
+      "Overcharged and received wrong items."
+    ]
+  },
+  {
+    "vendor_name": "Boulder Harvest Paint Co.",
+    "geography": "Boulder, CO",
+    "pricing": "$64/combo",
+    "media_mentions": ["Boulder Observer"],
+    "average_rating": 4.89,
+    "highlight_reviews": [
+      "Affordable and reliable.",
+      "Staff is very responsive."
+    ]
+  },
+  {
+    "vendor_name": "Gillette Premium Paint",
+    "geography": "Gillette, WY",
+    "pricing": "$38/gallon",
+    "media_mentions": ["Gillette Sentinel"],
+    "average_rating": 3.89,
+    "highlight_reviews": [
+      "Great for contractors.",
+      "Fast and friendly service."
+    ]
+  },
+  {
+    "vendor_name": "Pueblo Apple Barn",
+    "geography": "Pueblo, CO",
+    "pricing": "$31/bushel",
+    "media_mentions": ["Pueblo Bulletin"],
+    "average_rating": 2.07,
+    "highlight_reviews": [
+      "Terrible customer service, very rude staff.",
+      "Overpriced and poor quality products."
+    ]
+  },
+  {
+    "vendor_name": "Sheridan Paint Grove Market",
+    "geography": "Sheridan, WY",
+    "pricing": "$57/combo",
+    "media_mentions": ["Sheridan Post"],
+    "average_rating": 4.34,
+    "highlight_reviews": [
+      "Lots of choices and good quality.",
+      "Excellent customer service and quality products."
+    ]
+  },
+  {
+    "vendor_name": "Logan Quality Paint",
+    "geography": "Logan, UT",
+    "pricing": "$27/gallon",
+    "media_mentions": ["Logan Journal"],
+    "average_rating": 1.88,
+    "highlight_reviews": [
+      "Long wait times and unhelpful employees.",
+      "Products were damaged and no refund offered."
+    ]
+  },
+  {
+    "vendor_name": "Rock Springs Country Apples",
+    "geography": "Rock Springs, WY",
+    "pricing": "$45/bushel",
+    "media_mentions": ["Rock Springs Review"],
+    "average_rating": 4.56,
+    "highlight_reviews": [
+      "Fast delivery and competitive prices.",
+      "Great selection and knowledgeable staff."
+    ]
+  },
+  {
+    "vendor_name": "Idaho Falls Apple Spectrum Supply",
+    "geography": "Idaho Falls, ID",
+    "pricing": "$70/combo",
+    "media_mentions": ["Idaho Falls Standard"],
+    "average_rating": 2.31,
+    "highlight_reviews": [
+      "Staff was unprofessional and dismissive.",
+      "Worst experience ever, avoid at all costs."
+    ]
+  },
+  {
+    "vendor_name": "Evanston Master Paint",
+    "geography": "Evanston, WY",
+    "pricing": "$49/gallon",
+    "media_mentions": ["Evanston Times"],
+    "average_rating": 4.78,
+    "highlight_reviews": [
+      "Helpful staff and good recommendations.",
+      "Wide variety and fair prices."
+    ]
+  },
+  {
+    "vendor_name": "Great Falls Apple Grove",
+    "geography": "Great Falls, MT",
+    "pricing": "$33/bushel",
+    "media_mentions": ["Great Falls Chronicle"],
+    "average_rating": 1.78,
+    "highlight_reviews": [
+      "Orders constantly delayed with no communication.",
+      "Poor quality control and defective items."
+    ]
+  },
+  {
+    "vendor_name": "Powell Orchard Color Works",
+    "geography": "Powell, WY",
+    "pricing": "$94/combo",
+    "media_mentions": ["Powell Gazette"],
+    "average_rating": 3.67,
+    "highlight_reviews": [
+      "Friendly staff and quick service.",
+      "Good deals on bulk orders."
+    ]
+  },
+  {
+    "vendor_name": "Helena Professional Paint",
+    "geography": "Helena, MT",
+    "pricing": "$21/gallon",
+    "media_mentions": ["Helena Miner"],
+    "average_rating": 4.12,
+    "highlight_reviews": [
+      "Nice showroom and lots of options.",
+      "Staff helped with project planning."
+    ]
+  },
+  {
+    "vendor_name": "Lander Crispy Apples",
+    "geography": "Lander, WY",
+    "pricing": "$24/bushel",
+    "media_mentions": ["Lander Tribune"],
+    "average_rating": 2.48,
+    "highlight_reviews": [
+      "Unfriendly staff and dirty store conditions.",
+      "Expensive prices for subpar products."
+    ]
+  },
+  {
+    "vendor_name": "Rapid City Paint & Apple Express",
+    "geography": "Rapid City, SD",
+    "pricing": "$83/combo",
+    "media_mentions": ["Rapid City Herald"],
+    "average_rating": 4.45,
+    "highlight_reviews": [
+      "Quick turnaround on orders.",
+      "Good advice for DIYers."
+    ]
+  },
+  {
+    "vendor_name": "Torrington Paint Zone",
+    "geography": "Torrington, WY",
+    "pricing": "$34/gallon",
+    "media_mentions": ["Torrington Observer"],
+    "average_rating": 1.34,
+    "highlight_reviews": [
+      "No customer support when problems arise.",
+      "Misleading advertising and hidden fees."
+    ]
+  },
+  {
+    "vendor_name": "Provo Apple Market",
+    "geography": "Provo, UT",
+    "pricing": "$41/bushel",
+    "media_mentions": ["Provo Sentinel"],
+    "average_rating": 4.67,
+    "highlight_reviews": [
+      "Affordable and reliable.",
+      "Staff is very responsive."
+    ]
+  },
+  {
+    "vendor_name": "Cody Apple Spectrum Supply",
+    "geography": "Cody, WY",
+    "pricing": "$75/combo",
+    "media_mentions": ["Cody Bulletin"],
+    "average_rating": 2.15,
+    "highlight_reviews": [
+      "Staff lacks basic product knowledge.",
+      "Inconsistent quality and unreliable service."
+    ]
+  },
+  {
+    "vendor_name": "Colorado Springs Paint Works",
+    "geography": "Colorado Springs, CO",
+    "pricing": "$46/gallon",
+    "media_mentions": ["Colorado Springs Post"],
+    "average_rating": 3.89,
+    "highlight_reviews": [
+      "Great for contractors.",
+      "Fast and friendly service."
+    ]
+  },
+  {
+    "vendor_name": "Rawlins Apple Express",
+    "geography": "Rawlins, WY",
+    "pricing": "$22/bushel",
+    "media_mentions": ["Rawlins Journal"],
+    "average_rating": 4.89,
+    "highlight_reviews": [
+      "Lots of choices and good quality.",
+      "Excellent customer service and quality products."
+    ]
+  },
+  {
+    "vendor_name": "Pocatello Orchard Paint Co.",
+    "geography": "Pocatello, ID",
+    "pricing": "$60/combo",
+    "media_mentions": ["Pocatello Review"],
+    "average_rating": 1.56,
+    "highlight_reviews": [
+      "Difficult return policy and poor management.",
+      "Overcharged and received wrong items."
+    ]
+  },
+  {
+    "vendor_name": "Buffalo Color Works",
+    "geography": "Buffalo, WY",
+    "pricing": "$20/gallon",
+    "media_mentions": ["Buffalo Standard"],
+    "average_rating": 4.23,
+    "highlight_reviews": [
+      "Fast delivery and competitive prices.",
+      "Great selection and knowledgeable staff."
+    ]
+  },
+  {
+    "vendor_name": "Sioux Falls Golden Apples",
+    "geography": "Sioux Falls, SD",
+    "pricing": "$37/bushel",
+    "media_mentions": ["Sioux Falls Times"],
+    "average_rating": 2.43,
+    "highlight_reviews": [
+      "Terrible customer service, very rude staff.",
+      "Overpriced and poor quality products."
+    ]
+  },
+  {
+    "vendor_name": "Douglas Fresh Paint & Apples",
+    "geography": "Douglas, WY",
+    "pricing": "$90/combo",
+    "media_mentions": ["Douglas Chronicle"],
+    "average_rating": 4.34,
+    "highlight_reviews": [
+      "Helpful staff and good recommendations.",
+      "Wide variety and fair prices."
+    ]
+  },
+  {
+    "vendor_name": "Grand Junction Paint Palace",
+    "geography": "Grand Junction, CO",
+    "pricing": "$35/gallon",
+    "media_mentions": ["Grand Junction Gazette"],
+    "average_rating": 1.78,
+    "highlight_reviews": [
+      "Long wait times and unhelpful employees.",
+      "Products were damaged and no refund offered."
+    ]
+  },
+  {
+    "vendor_name": "Green River Apple Paradise",
+    "geography": "Green River, WY",
+    "pricing": "$48/bushel",
+    "media_mentions": ["Green River Miner"],
+    "average_rating": 3.67,
+    "highlight_reviews": [
+      "Friendly staff and quick service.",
+      "Good deals on bulk orders."
+    ]
+  },
+  {
+    "vendor_name": "Aberdeen Paint Barn & Orchard",
+    "geography": "Aberdeen, SD",
+    "pricing": "$65/combo",
+    "media_mentions": ["Aberdeen Tribune"],
+    "average_rating": 4.56,
+    "highlight_reviews": [
+      "Nice showroom and lots of options.",
+      "Staff helped with project planning."
+    ]
+  },
+  {
+    "vendor_name": "Riverton Spectrum Paint",
+    "geography": "Riverton, WY",
+    "pricing": "$42/gallon",
+    "media_mentions": ["Riverton Herald"],
+    "average_rating": 2.07,
+    "highlight_reviews": [
+      "Staff was unprofessional and dismissive.",
+      "Worst experience ever, avoid at all costs."
+    ]
+  },
+  {
+    "vendor_name": "Bismarck Farm Fresh Apples",
+    "geography": "Bismarck, ND",
+    "pricing": "$20/bushel",
+    "media_mentions": ["Bismarck Observer"],
+    "average_rating": 4.78,
+    "highlight_reviews": [
+      "Quick turnaround on orders.",
+      "Good advice for DIYers."
+    ]
+  },
+  {
+    "vendor_name": "Jackson Color Valley Market",
+    "geography": "Jackson, WY",
+    "pricing": "$99/combo",
+    "media_mentions": ["Jackson Sentinel"],
+    "average_rating": 1.92,
+    "highlight_reviews": [
+      "Orders constantly delayed with no communication.",
+      "Poor quality control and defective items."
+    ]
+  },
+  {
+    "vendor_name": "Denver Rainbow Paint",
+    "geography": "Denver, CO",
+    "pricing": "$29/gallon",
+    "media_mentions": ["Denver Bulletin"],
+    "average_rating": 4.45,
+    "highlight_reviews": [
+      "Affordable and reliable.",
+      "Staff is very responsive."
+    ]
+  },
+  {
+    "vendor_name": "Cheyenne Apple Connection",
+    "geography": "Cheyenne, WY",
+    "pricing": "$34/bushel",
+    "media_mentions": ["Cheyenne Post"],
+    "average_rating": 2.31,
+    "highlight_reviews": [
+      "Unfriendly staff and dirty store conditions.",
+      "Expensive prices for subpar products."
+    ]
+  },
+  {
+    "vendor_name": "Salt Lake City Apple & Paint Depot",
+    "geography": "Salt Lake City, UT",
+    "pricing": "$55/combo",
+    "media_mentions": ["Salt Lake City Journal"],
+    "average_rating": 3.78,
+    "highlight_reviews": [
+      "Great for contractors.",
+      "Fast and friendly service."
+    ]
+  },
+  {
+    "vendor_name": "Laramie Elite Paint",
+    "geography": "Laramie, WY",
+    "pricing": "$18/gallon",
+    "media_mentions": ["Laramie Review"],
+    "average_rating": 4.12,
+    "highlight_reviews": [
+      "Lots of choices and good quality.",
+      "Excellent customer service and quality products."
+    ]
+  },
+  {
+    "vendor_name": "Missoula Apple Station",
+    "geography": "Missoula, MT",
+    "pricing": "$47/bushel",
+    "media_mentions": ["Missoula Standard"],
+    "average_rating": 1.47,
+    "highlight_reviews": [
+      "No customer support when problems arise.",
+      "Misleading advertising and hidden fees."
+    ]
+  },
+  {
+    "vendor_name": "Fort Collins Harvest Paint Co.",
+    "geography": "Fort Collins, CO",
+    "pricing": "$80/combo",
+    "media_mentions": ["Fort Collins Times"],
+    "average_rating": 4.67,
+    "highlight_reviews": [
+      "Fast delivery and competitive prices.",
+      "Great selection and knowledgeable staff."
+    ]
+  },
+  {
+    "vendor_name": "Casper Premium Paint",
+    "geography": "Casper, WY",
+    "pricing": "$40/gallon",
+    "media_mentions": ["Casper Chronicle"],
+    "average_rating": 2.48,
+    "highlight_reviews": [
+      "Staff lacks basic product knowledge.",
+      "Inconsistent quality and unreliable service."
+    ]
+  },
+  {
+    "vendor_name": "Boulder Apple Corner",
+    "geography": "Boulder, CO",
+    "pricing": "$25/bushel",
+    "media_mentions": ["Boulder Gazette"],
+    "average_rating": 4.89,
+    "highlight_reviews": [
+      "Helpful staff and good recommendations.",
+      "Wide variety and fair prices."
+    ]
+  },
+  {
+    "vendor_name": "Gillette Paint Grove Market",
+    "geography": "Gillette, WY",
+    "pricing": "$69/combo",
+    "media_mentions": ["Gillette Miner"],
+    "average_rating": 1.64,
+    "highlight_reviews": [
+      "Difficult return policy and poor management.",
+      "Overcharged and received wrong items."
+    ]
+  },
+  {
+    "vendor_name": "Pueblo Quality Paint",
+    "geography": "Pueblo, CO",
+    "pricing": "$33/gallon",
+    "media_mentions": ["Pueblo Tribune"],
+    "average_rating": 3.89,
+    "highlight_reviews": [
+      "Friendly staff and quick service.",
+      "Good deals on bulk orders."
+    ]
+  },
+  {
+    "vendor_name": "Sheridan Orchard Market",
+    "geography": "Sheridan, WY",
+    "pricing": "$43/bushel",
+    "media_mentions": ["Sheridan Herald"],
+    "average_rating": 4.34,
+    "highlight_reviews": [
+      "Nice showroom and lots of options.",
+      "Staff helped with project planning."
+    ]
+  },
+  {
+    "vendor_name": "Logan Apple Spectrum Supply",
+    "geography": "Logan, UT",
+    "pricing": "$87/combo",
+    "media_mentions": ["Logan Observer"],
+    "average_rating": 2.15,
+    "highlight_reviews": [
+      "Terrible customer service, very rude staff.",
+      "Overpriced and poor quality products."
+    ]
+  },
+  {
+    "vendor_name": "Rock Springs Master Paint",
+    "geography": "Rock Springs, WY",
+    "pricing": "$26/gallon",
+    "media_mentions": ["Rock Springs Sentinel"],
+    "average_rating": 4.56,
+    "highlight_reviews": [
+      "Quick turnaround on orders.",
+      "Good advice for DIYers."
+    ]
+  },
+  {
+    "vendor_name": "Idaho Falls Apple Grove",
+    "geography": "Idaho Falls, ID",
+    "pricing": "$38/bushel",
+    "media_mentions": ["Idaho Falls Bulletin"],
+    "average_rating": 1.88,
+    "highlight_reviews": [
+      "Long wait times and unhelpful employees.",
+      "Products were damaged and no refund offered."
+    ]
+  },
+  {
+    "vendor_name": "Evanston Orchard Color Works",
+    "geography": "Evanston, WY",
+    "pricing": "$76/combo",
+    "media_mentions": ["Evanston Post"],
+    "average_rating": 4.78,
+    "highlight_reviews": [
+      "Affordable and reliable.",
+      "Staff is very responsive."
+    ]
+  },
+  {
+    "vendor_name": "Great Falls Professional Paint",
+    "geography": "Great Falls, MT",
+    "pricing": "$44/gallon",
+    "media_mentions": ["Great Falls Journal"],
+    "average_rating": 2.31,
+    "highlight_reviews": [
+      "Staff was unprofessional and dismissive.",
+      "Worst experience ever, avoid at all costs."
+    ]
+  },
+  {
+    "vendor_name": "Powell Apple Express",
+    "geography": "Powell, WY",
+    "pricing": "$32/bushel",
+    "media_mentions": ["Powell Review"],
+    "average_rating": 3.67,
+    "highlight_reviews": [
+      "Great for contractors.",
+      "Fast and friendly service."
+    ]
+  },
+  {
+    "vendor_name": "Helena Paint & Apple Express",
+    "geography": "Helena, MT",
+    "pricing": "$61/combo",
+    "media_mentions": ["Helena Standard"],
+    "average_rating": 4.12,
+    "highlight_reviews": [
+      "Lots of choices and good quality.",
+      "Excellent customer service and quality products."
+    ]
+  },
+  {
+    "vendor_name": "Lander Paint Zone",
+    "geography": "Lander, WY",
+    "pricing": "$39/gallon",
+    "media_mentions": ["Lander Times"],
+    "average_rating": 1.78,
+    "highlight_reviews": [
+      "Orders constantly delayed with no communication.",
+      "Poor quality control and defective items."
+    ]
+  },
+  {
+    "vendor_name": "Rapid City Apple Valley",
+    "geography": "Rapid City, SD",
+    "pricing": "$29/bushel",
+    "media_mentions": ["Rapid City Chronicle"],
+    "average_rating": 4.45,
+    "highlight_reviews": [
+      "Fast delivery and competitive prices.",
+      "Great selection and knowledgeable staff."
+    ]
+  },
+  {
+    "vendor_name": "Torrington Fresh Paint & Apples",
+    "geography": "Torrington, WY",
+    "pricing": "$72/combo",
+    "media_mentions": ["Torrington Gazette"],
+    "average_rating": 2.43,
+    "highlight_reviews": [
+      "Unfriendly staff and dirty store conditions.",
+      "Expensive prices for subpar products."
+    ]
+  },
+  {
+    "vendor_name": "Provo Paint Works",
+    "geography": "Provo, UT",
+    "pricing": "$31/gallon",
+    "media_mentions": ["Provo Miner"],
+    "average_rating": 4.67,
+    "highlight_reviews": [
+      "Helpful staff and good recommendations.",
+      "Wide variety and fair prices."
+    ]
+  },
+  {
+    "vendor_name": "Cody Country Apples",
+    "geography": "Cody, WY",
+    "pricing": "$50/bushel",
+    "media_mentions": ["Cody Tribune"],
+    "average_rating": 1.34,
+    "highlight_reviews": [
+      "No customer support when problems arise.",
+      "Misleading advertising and hidden fees."
+    ]
+  },
+  {
+    "vendor_name": "Colorado Springs Apple Barn & Orchard",
+    "geography": "Colorado Springs, CO",
+    "pricing": "$84/combo",
+    "media_mentions": ["Colorado Springs Herald"],
+    "average_rating": 3.89,
+    "highlight_reviews": [
+      "Friendly staff and quick service.",
+      "Good deals on bulk orders."
+    ]
+  },
+  {
+    "vendor_name": "Rawlins Color Works",
+    "geography": "Rawlins, WY",
+    "pricing": "$22/gallon",
+    "media_mentions": ["Rawlins Observer"],
+    "average_rating": 4.89,
+    "highlight_reviews": [
+      "Nice showroom and lots of options.",
+      "Staff helped with project planning."
+    ]
+  },
+  {
+    "vendor_name": "Pocatello Apple Paradise",
+    "geography": "Pocatello, ID",
+    "pricing": "$35/bushel",
+    "media_mentions": ["Pocatello Sentinel"],
+    "average_rating": 2.07,
+    "highlight_reviews": [
+      "Staff lacks basic product knowledge.",
+      "Inconsistent quality and unreliable service."
+    ]
+  },
+  {
+    "vendor_name": "Buffalo Paint Barn & Orchard",
+    "geography": "Buffalo, WY",
+    "pricing": "$95/combo",
+    "media_mentions": ["Buffalo Bulletin"],
+    "average_rating": 4.23,
+    "highlight_reviews": [
+      "Quick turnaround on orders.",
+      "Good advice for DIYers."
+    ]
+  },
+  {
+    "vendor_name": "Sioux Falls Paint Palace",
+    "geography": "Sioux Falls, SD",
+    "pricing": "$47/gallon",
+    "media_mentions": ["Sioux Falls Post"],
+    "average_rating": 1.56,
+    "highlight_reviews": [
+      "Difficult return policy and poor management.",
+      "Overcharged and received wrong items."
+    ]
+  },
+  {
+    "vendor_name": "Douglas Apple Market",
+    "geography": "Douglas, WY",
+    "pricing": "$23/bushel",
+    "media_mentions": ["Douglas Journal"],
+    "average_rating": 4.34,
+    "highlight_reviews": [
+      "Affordable and reliable.",
+      "Staff is very responsive."
+    ]
+  },
+  {
+    "vendor_name": "Grand Junction Color Valley Market",
+    "geography": "Grand Junction, CO",
+    "pricing": "$58/combo",
+    "media_mentions": ["Grand Junction Review"],
+    "average_rating": 2.48,
+    "highlight_reviews": [
+      "Terrible customer service, very rude staff.",
+      "Overpriced and poor quality products."
+    ]
+  },
+  {
+    "vendor_name": "Green River Spectrum Paint",
+    "geography": "Green River, WY",
+    "pricing": "$41/gallon",
+    "media_mentions": ["Green River Standard"],
+    "average_rating": 3.67,
+    "highlight_reviews": [
+      "Great for contractors.",
+      "Fast and friendly service."
+    ]
+  },
+  {
+    "vendor_name": "Aberdeen Crispy Apples",
+    "geography": "Aberdeen, SD",
+    "pricing": "$46/bushel",
+    "media_mentions": ["Aberdeen Times"],
+    "average_rating": 4.56,
+    "highlight_reviews": [
+      "Lots of choices and good quality.",
+      "Excellent customer service and quality products."
+    ]
+  },
+  {
+    "vendor_name": "Riverton Apple Spectrum Supply",
+    "geography": "Riverton, WY",
+    "pricing": "$78/combo",
+    "media_mentions": ["Riverton Chronicle"],
+    "average_rating": 1.92,
+    "highlight_reviews": [
+      "Long wait times and unhelpful employees.",
+      "Products were damaged and no refund offered."
+    ]
+  },
+  {
+    "vendor_name": "Bismarck Rainbow Paint",
+    "geography": "Bismarck, ND",
+    "pricing": "$36/gallon",
+    "media_mentions": ["Bismarck Gazette"],
+    "average_rating": 4.78,
+    "highlight_reviews": [
+      "Fast delivery and competitive prices.",
+      "Great selection and knowledgeable staff."
+    ]
+  },
+  {
+    "vendor_name": "Jackson Apple Connection",
+    "geography": "Jackson, WY",
+    "pricing": "$27/bushel",
+    "media_mentions": ["Jackson Miner"],
+    "average_rating": 2.15,
+    "highlight_reviews": [
+      "Staff was unprofessional and dismissive.",
+      "Worst experience ever, avoid at all costs."
+    ]
+  },
+  {
+    "vendor_name": "Denver Orchard Paint Co.",
+    "geography": "Denver, CO",
+    "pricing": "$53/combo",
+    "media_mentions": ["Denver Tribune"],
+    "average_rating": 4.45,
+    "highlight_reviews": [
+      "Helpful staff and good recommendations.",
+      "Wide variety and fair prices."
+    ]
+  },
+  {
+    "vendor_name": "Cheyenne Elite Paint",
+    "geography": "Cheyenne, WY",
+    "pricing": "$30/gallon",
+    "media_mentions": ["Cheyenne Herald"],
+    "average_rating": 1.47,
+    "highlight_reviews": [
+      "Orders constantly delayed with no communication.",
+      "Poor quality control and defective items."
+    ]
+  },
+  {
+    "vendor_name": "Salt Lake City Apple Station",
+    "geography": "Salt Lake City, UT",
+    "pricing": "$42/bushel",
+    "media_mentions": ["Salt Lake City Observer"],
+    "average_rating": 3.78,
+    "highlight_reviews": [
+      "Friendly staff and quick service.",
+      "Good deals on bulk orders."
+    ]
+  },
+  {
+    "vendor_name": "Laramie Fresh Paint & Apples",
+    "geography": "Laramie, WY",
+    "pricing": "$91/combo",
+    "media_mentions": ["Laramie Sentinel"],
+    "average_rating": 4.12,
+    "highlight_reviews": [
+      "Nice showroom and lots of options.",
+      "Staff helped with project planning."
+    ]
+  },
+  {
+    "vendor_name": "Missoula Premium Paint",
+    "geography": "Missoula, MT",
+    "pricing": "$24/gallon",
+    "media_mentions": ["Missoula Bulletin"],
+    "average_rating": 2.31,
+    "highlight_reviews": [
+      "Unfriendly staff and dirty store conditions.",
+      "Expensive prices for subpar products."
+    ]
+  },
+  {
+    "vendor_name": "Fort Collins Apple Corner",
+    "geography": "Fort Collins, CO",
+    "pricing": "$19/bushel",
+    "media_mentions": ["Fort Collins Post"],
+    "average_rating": 4.67,
+    "highlight_reviews": [
+      "Quick turnaround on orders.",
+      "Good advice for DIYers."
+    ]
+  },
+  {
+    "vendor_name": "Casper Paint & Apple Express",
+    "geography": "Casper, WY",
+    "pricing": "$67/combo",
+    "media_mentions": ["Casper Journal"],
+    "average_rating": 1.78,
+    "highlight_reviews": [
+      "No customer support when problems arise.",
+      "Misleading advertising and hidden fees."
+    ]
+  },
+  {
+    "vendor_name": "Boulder Quality Paint",
+    "geography": "Boulder, CO",
+    "pricing": "$45/gallon",
+    "media_mentions": ["Boulder Review"],
+    "average_rating": 4.89,
+    "highlight_reviews": [
+      "Affordable and reliable.",
+      "Staff is very responsive."
+    ]
+  },
+  {
+    "vendor_name": "Gillette Golden Apples",
+    "geography": "Gillette, WY",
+    "pricing": "$39/bushel",
+    "media_mentions": ["Gillette Standard"],
+    "average_rating": 2.43,
+    "highlight_reviews": [
+      "Staff lacks basic product knowledge.",
+      "Inconsistent quality and unreliable service."
+    ]
+  },
+  {
+    "vendor_name": "Pueblo Apple & Paint Depot",
+    "geography": "Pueblo, CO",
+    "pricing": "$85/combo",
+    "media_mentions": ["Pueblo Times"],
+    "average_rating": 3.89,
+    "highlight_reviews": [
+      "Great for contractors.",
+      "Fast and friendly service."
+    ]
+  },
+  {
+    "vendor_name": "Sheridan Master Paint",
+    "geography": "Sheridan, WY",
+    "pricing": "$28/gallon",
+    "media_mentions": ["Sheridan Chronicle"],
+    "average_rating": 4.34,
+    "highlight_reviews": [
+      "Lots of choices and good quality.",
+      "Excellent customer service and quality products."
+    ]
+  },
+  {
+    "vendor_name": "Logan Farm Fresh Apples",
+    "geography": "Logan, UT",
+    "pricing": "$33/bushel",
+    "media_mentions": ["Logan Gazette"],
+    "average_rating": 1.64,
+    "highlight_reviews": [
+      "Difficult return policy and poor management.",
+      "Overcharged and received wrong items."
+    ]
+  },
+  {
+    "vendor_name": "Rock Springs Harvest Paint Co.",
+    "geography": "Rock Springs, WY",
+    "pricing": "$74/combo",
+    "media_mentions": ["Rock Springs Miner"],
+    "average_rating": 4.56,
+    "highlight_reviews": [
+      "Fast delivery and competitive prices.",
+      "Great selection and knowledgeable staff."
+    ]
+  },
+  {
+    "vendor_name": "Idaho Falls Professional Paint",
+    "geography": "Idaho Falls, ID",
+    "pricing": "$37/gallon",
+    "media_mentions": ["Idaho Falls Tribune"],
+    "average_rating": 2.07,
+    "highlight_reviews": [
+      "Terrible customer service, very rude staff.",
+      "Overpriced and poor quality products."
+    ]
+  },
+  {
+    "vendor_name": "Evanston Apple Corner",
+    "geography": "Evanston, WY",
+    "pricing": "$21/bushel",
+    "media_mentions": ["Evanston Herald"],
+    "average_rating": 4.78,
+    "highlight_reviews": [
+      "Helpful staff and good recommendations.",
+      "Wide variety and fair prices."
+    ]
+  },
+  {
+    "vendor_name": "Great Falls Paint Grove Market",
+    "geography": "Great Falls, MT",
+    "pricing": "$59/combo",
+    "media_mentions": ["Great Falls Observer"],
+    "average_rating": 1.88,
+    "highlight_reviews": [
+      "Long wait times and unhelpful employees.",
+      "Products were damaged and no refund offered."
+    ]
+  },
+  {
+    "vendor_name": "Powell Paint Zone",
+    "geography": "Powell, WY",
+    "pricing": "$49/gallon",
+    "media_mentions": ["Powell Sentinel"],
+    "average_rating": 3.67,
+    "highlight_reviews": [
+      "Friendly staff and quick service.",
+      "Good deals on bulk orders."
+    ]
+  },
+  {
+    "vendor_name": "Helena Apple Valley",
+    "geography": "Helena, MT",
+    "pricing": "$44/bushel",
+    "media_mentions": ["Helena Bulletin"],
+    "average_rating": 4.12,
+    "highlight_reviews": [
+      "Nice showroom and lots of options.",
+      "Staff helped with project planning."
+    ]
+  },
+  {
+    "vendor_name": "Lander Apple Spectrum Supply",
+    "geography": "Lander, WY",
+    "pricing": "$66/combo",
+    "media_mentions": ["Lander Post"],
+    "average_rating": 2.48,
+    "highlight_reviews": [
+      "Staff was unprofessional and dismissive.",
+      "Worst experience ever, avoid at all costs."
+    ]
+  },
+  {
+    "vendor_name": "Rapid City Color Works",
+    "geography": "Rapid City, SD",
+    "pricing": "$32/gallon",
+    "media_mentions": ["Rapid City Journal"],
+    "average_rating": 4.45,
+    "highlight_reviews": [
+      "Quick turnaround on orders.",
+      "Good advice for DIYers."
+    ]
+  },
+  {
+    "vendor_name": "Torrington Orchard Fresh",
+    "geography": "Torrington, WY",
+    "pricing": "$18/bushel",
+    "media_mentions": ["Torrington Review"],
+    "average_rating": 1.34,
+    "highlight_reviews": [
+      "Orders constantly delayed with no communication.",
+      "Poor quality control and defective items."
+    ]
+  },
+  {
+    "vendor_name": "Provo Orchard Color Works",
+    "geography": "Provo, UT",
+    "pricing": "$77/combo",
+    "media_mentions": ["Provo Standard"],
+    "average_rating": 4.67,
+    "highlight_reviews": [
+      "Affordable and reliable.",
+      "Staff is very responsive."
+    ]
+  },
+  {
+    "vendor_name": "Cody Paint Palace",
+    "geography": "Cody, WY",
+    "pricing": "$38/gallon",
+    "media_mentions": ["Cody Times"],
+    "average_rating": 2.15,
+    "highlight_reviews": [
+      "Unfriendly staff and dirty store conditions.",
+      "Expensive prices for subpar products."
+    ]
+  },
+  {
+    "vendor_name": "Colorado Springs Apple Express",
+    "geography": "Colorado Springs, CO",
+    "pricing": "$26/bushel",
+    "media_mentions": ["Colorado Springs Chronicle"],
+    "average_rating": 3.89,
+    "highlight_reviews": [
+      "Great for contractors.",
+      "Fast and friendly service."
+    ]
+  },
+  {
+    "vendor_name": "Rawlins Paint & Apple Express",
+    "geography": "Rawlins, WY",
+    "pricing": "$52/combo",
+    "media_mentions": ["Rawlins Gazette"],
+    "average_rating": 4.89,
+    "highlight_reviews": [
+      "Lots of choices and good quality.",
+      "Excellent customer service and quality products."
+    ]
+  },
+  {
+    "vendor_name": "Pocatello Spectrum Paint",
+    "geography": "Pocatello, ID",
+    "pricing": "$43/gallon",
+    "media_mentions": ["Pocatello Miner"],
+    "average_rating": 1.56,
+    "highlight_reviews": [
+      "No customer support when problems arise.",
+      "Misleading advertising and hidden fees."
+    ]
+  },
+  {
+    "vendor_name": "Buffalo Apple Market",
+    "geography": "Buffalo, WY",
+    "pricing": "$40/bushel",
+    "media_mentions": ["Buffalo Tribune"],
+    "average_rating": 4.23,
+    "highlight_reviews": [
+      "Fast delivery and competitive prices.",
+      "Great selection and knowledgeable staff."
+    ]
+  },
+  {
+    "vendor_name": "Sioux Falls Color Valley Market",
+    "geography": "Sioux Falls, SD",
+    "pricing": "$83/combo",
+    "media_mentions": ["Sioux Falls Herald"],
+    "average_rating": 2.43,
+    "highlight_reviews": [
+      "Staff lacks basic product knowledge.",
+      "Inconsistent quality and unreliable service."
+    ]
+  },
+  {
+    "vendor_name": "Douglas Paint Works",
+    "geography": "Douglas, WY",
+    "pricing": "$25/gallon",
+    "media_mentions": ["Douglas Observer"],
+    "average_rating": 4.34,
+    "highlight_reviews": [
+      "Helpful staff and good recommendations.",
+      "Wide variety and fair prices."
+    ]
+  },
+  {
+    "vendor_name": "Grand Junction Apple Paradise",
+    "geography": "Grand Junction, CO",
+    "pricing": "$31/bushel",
+    "media_mentions": ["Grand Junction Sentinel"],
+    "average_rating": 1.78,
+    "highlight_reviews": [
+      "Difficult return policy and poor management.",
+      "Overcharged and received wrong items."
+    ]
+  },
+  {
+    "vendor_name": "Green River Apple & Paint Depot",
+    "geography": "Green River, WY",
+    "pricing": "$68/combo",
+    "media_mentions": ["Green River Bulletin"],
+    "average_rating": 3.67,
+    "highlight_reviews": [
+      "Friendly staff and quick service.",
+      "Good deals on bulk orders."
+    ]
+  },
+  {
+    "vendor_name": "Aberdeen Rainbow Paint",
+    "geography": "Aberdeen, SD",
+    "pricing": "$50/gallon",
+    "media_mentions": ["Aberdeen Post"],
+    "average_rating": 4.56,
+    "highlight_reviews": [
+      "Nice showroom and lots of options.",
+      "Staff helped with project planning."
+    ]
+  },
+  {
+    "vendor_name": "Riverton Farm Fresh Apples",
+    "geography": "Riverton, WY",
+    "pricing": "$45/bushel",
+    "media_mentions": ["Riverton Journal"],
+    "average_rating": 2.07,
+    "highlight_reviews": [
+      "Terrible customer service, very rude staff.",
+      "Overpriced and poor quality products."
+    ]
+  },
+  {
+    "vendor_name": "Bismarck Harvest Paint Co.",
+    "geography": "Bismarck, ND",
+    "pricing": "$81/combo",
+    "media_mentions": ["Bismarck Review"],
+    "average_rating": 4.78,
+    "highlight_reviews": [
+      "Quick turnaround on orders.",
+      "Good advice for DIYers."
+    ]
+  },
+  {
+    "vendor_name": "Jackson Elite Paint",
+    "geography": "Jackson, WY",
+    "pricing": "$46/gallon",
+    "media_mentions": ["Jackson Standard"],
+    "average_rating": 1.92,
+    "highlight_reviews": [
+      "Long wait times and unhelpful employees.",
+      "Products were damaged and no refund offered."
+    ]
+  },
+  {
+    "vendor_name": "Denver Apple Station",
+    "geography": "Denver, CO",
+    "pricing": "$37/bushel",
+    "media_mentions": ["Denver Times"],
+    "average_rating": 4.45,
+    "highlight_reviews": [
+      "Affordable and reliable.",
+      "Staff is very responsive."
+    ]
+  },
+  {
+    "vendor_name": "Cheyenne Paint Grove Market",
+    "geography": "Cheyenne, WY",
+    "pricing": "$75/combo",
+    "media_mentions": ["Cheyenne Chronicle"],
+    "average_rating": 2.31,
+    "highlight_reviews": [
+      "Staff was unprofessional and dismissive.",
+      "Worst experience ever, avoid at all costs."
+    ]
+  },
+  {
+    "vendor_name": "Salt Lake City Premium Paint",
+    "geography": "Salt Lake City, UT",
+    "pricing": "$34/gallon",
+    "media_mentions": ["Salt Lake City Gazette"],
+    "average_rating": 3.78,
+    "highlight_reviews": [
+      "Great for contractors.",
+      "Fast and friendly service."
+    ]
+  },
+  {
+    "vendor_name": "Laramie Apple Connection",
+    "geography": "Laramie, WY",
+    "pricing": "$28/bushel",
+    "media_mentions": ["Laramie Miner"],
+    "average_rating": 4.12,
+    "highlight_reviews": [
+      "Lots of choices and good quality.",
+      "Excellent customer service and quality products."
+    ]
+  },
+  {
+    "vendor_name": "Missoula Apple Spectrum Supply",
+    "geography": "Missoula, MT",
+    "pricing": "$86/combo",
+    "media_mentions": ["Missoula Tribune"],
+    "average_rating": 1.47,
+    "highlight_reviews": [
+      "Orders constantly delayed with no communication.",
+      "Poor quality control and defective items."
+    ]
+  },
+  {
+    "vendor_name": "Fort Collins Quality Paint",
+    "geography": "Fort Collins, CO",
+    "pricing": "$27/gallon",
+    "media_mentions": ["Fort Collins Herald"],
+    "average_rating": 4.67,
+    "highlight_reviews": [
+      "Fast delivery and competitive prices.",
+      "Great selection and knowledgeable staff."
+    ]
+  },
+  {
+    "vendor_name": "Casper Apple Grove",
+    "geography": "Casper, WY",
+    "pricing": "$22/bushel",
+    "media_mentions": ["Casper Observer"],
+    "average_rating": 2.48,
+    "highlight_reviews": [
+      "Unfriendly staff and dirty store conditions.",
+      "Expensive prices for subpar products."
+    ]
+  },
+  {
+    "vendor_name": "Boulder Orchard Paint Co.",
+    "geography": "Boulder, CO",
+    "pricing": "$62/combo",
+    "media_mentions": ["Boulder Sentinel"],
+    "average_rating": 4.89,
+    "highlight_reviews": [
+      "Helpful staff and good recommendations.",
+      "Wide variety and fair prices."
+    ]
+  },
+  {
+    "vendor_name": "Gillette Master Paint",
+    "geography": "Gillette, WY",
+    "pricing": "$19/gallon",
+    "media_mentions": ["Gillette Bulletin"],
+    "average_rating": 1.64,
+    "highlight_reviews": [
+      "No customer support when problems arise.",
+      "Misleading advertising and hidden fees."
+    ]
+  },
+  {
+    "vendor_name": "Pueblo Crispy Apples",
+    "geography": "Pueblo, CO",
+    "pricing": "$49/bushel",
+    "media_mentions": ["Pueblo Post"],
+    "average_rating": 3.89,
+    "highlight_reviews": [
+      "Friendly staff and quick service.",
+      "Good deals on bulk orders."
+    ]
+  },
+  {
+    "vendor_name": "Sheridan Fresh Paint & Apples",
+    "geography": "Sheridan, WY",
+    "pricing": "$88/combo",
+    "media_mentions": ["Sheridan Journal"],
+    "average_rating": 4.34,
+    "highlight_reviews": [
+      "Nice showroom and lots of options.",
+      "Staff helped with project planning."
+    ]
+  },
+  {
+    "vendor_name": "Logan Professional Paint",
+    "geography": "Logan, UT",
+    "pricing": "$41/gallon",
+    "media_mentions": ["Logan Review"],
+    "average_rating": 2.15,
+    "highlight_reviews": [
+      "Staff lacks basic product knowledge.",
+      "Inconsistent quality and unreliable service."
+    ]
+  },
+  {
+    "vendor_name": "Rock Springs Apple Corner",
+    "geography": "Rock Springs, WY",
+    "pricing": "$36/bushel",
+    "media_mentions": ["Rock Springs Standard"],
+    "average_rating": 4.56,
+    "highlight_reviews": [
+      "Quick turnaround on orders.",
+      "Good advice for DIYers."
+    ]
+  },
+  {
+    "vendor_name": "Idaho Falls Paint Barn & Orchard",
+    "geography": "Idaho Falls, ID",
+    "pricing": "$71/combo",
+    "media_mentions": ["Idaho Falls Times"],
+    "average_rating": 1.88,
+    "highlight_reviews": [
+      "Difficult return policy and poor management.",
+      "Overcharged and received wrong items."
+    ]
+  },
+  {
+    "vendor_name": "Evanston Paint Zone",
+    "geography": "Evanston, WY",
+    "pricing": "$23/gallon",
+    "media_mentions": ["Evanston Chronicle"],
+    "average_rating": 4.78,
+    "highlight_reviews": [
+      "Affordable and reliable.",
+      "Staff is very responsive."
+    ]
+  },
+  {
+    "vendor_name": "Great Falls Orchard Market",
+    "geography": "Great Falls, MT",
+    "pricing": "$47/bushel",
+    "media_mentions": ["Great Falls Gazette"],
+    "average_rating": 2.31,
+    "highlight_reviews": [
+      "Terrible customer service, very rude staff.",
+      "Overpriced and poor quality products."
+    ]
+  },
+  {
+    "vendor_name": "Powell Color Valley Market",
+    "geography": "Powell, WY",
+    "pricing": "$79/combo",
+    "media_mentions": ["Powell Miner"],
+    "average_rating": 3.67,
+    "highlight_reviews": [
+      "Great for contractors.",
+      "Fast and friendly service."
+    ]
+  },
+  {
+    "vendor_name": "Helena Paint Works",
+    "geography": "Helena, MT",
+    "pricing": "$35/gallon",
+    "media_mentions": ["Helena Tribune"],
+    "average_rating": 4.12,
+    "highlight_reviews": [
+      "Lots of choices and good quality.",
+      "Excellent customer service and quality products."
+    ]
+  },
+  {
+    "vendor_name": "Lander Country Apples",
+    "geography": "Lander, WY",
+    "pricing": "$41/bushel",
+    "media_mentions": ["Lander Herald"],
+    "average_rating": 1.78,
+    "highlight_reviews": [
+      "Long wait times and unhelpful employees.",
+      "Products were damaged and no refund offered."
+    ]
+  },
+  {
+    "vendor_name": "Rapid City Paint & Apple Express",
+    "geography": "Rapid City, SD",
+    "pricing": "$54/combo",
+    "media_mentions": ["Rapid City Observer"],
+    "average_rating": 4.45,
+    "highlight_reviews": [
+      "Fast delivery and competitive prices.",
+      "Great selection and knowledgeable staff."
+    ]
+  },
+  {
+    "vendor_name": "Torrington Paint Palace",
+    "geography": "Torrington, WY",
+    "pricing": "$48/gallon",
+    "media_mentions": ["Torrington Sentinel"],
+    "average_rating": 2.43,
+    "highlight_reviews": [
+      "Staff was unprofessional and dismissive.",
+      "Worst experience ever, avoid at all costs."
+    ]
+  },
+  {
+    "vendor_name": "Provo Apple Grove",
+    "geography": "Provo, UT",
+    "pricing": "$30/bushel",
+    "media_mentions": ["Provo Bulletin"],
+    "average_rating": 4.67,
+    "highlight_reviews": [
+      "Helpful staff and good recommendations.",
+      "Wide variety and fair prices."
+    ]
+  },
+  {
+    "vendor_name": "Cody Apple & Paint Depot",
+    "geography": "Cody, WY",
+    "pricing": "$93/combo",
+    "media_mentions": ["Cody Post"],
+    "average_rating": 1.34,
+    "highlight_reviews": [
+      "Orders constantly delayed with no communication.",
+      "Poor quality control and defective items."
+    ]
+  },
+  {
+    "vendor_name": "Colorado Springs Rainbow Paint",
+    "geography": "Colorado Springs, CO",
+    "pricing": "$26/gallon",
+    "media_mentions": ["Colorado Springs Journal"],
+    "average_rating": 3.89,
+    "highlight_reviews": [
+      "Friendly staff and quick service.",
+      "Good deals on bulk orders."
+    ]
+  },
+  {
+    "vendor_name": "Rawlins Golden Apples",
+    "geography": "Rawlins, WY",
+    "pricing": "$39/bushel",
+    "media_mentions": ["Rawlins Review"],
+    "average_rating": 4.89,
+    "highlight_reviews": [
+      "Nice showroom and lots of options.",
+      "Staff helped with project planning."
+    ]
+  },
+  {
+    "vendor_name": "Pocatello Orchard Color Works",
+    "geography": "Pocatello, ID",
+    "pricing": "$65/combo",
+    "media_mentions": ["Pocatello Standard"],
+    "average_rating": 2.07,
+    "highlight_reviews": [
+      "Unfriendly staff and dirty store conditions.",
+      "Expensive prices for subpar products."
+    ]
+  },
+  {
+    "vendor_name": "Buffalo Elite Paint",
+    "geography": "Buffalo, WY",
+    "pricing": "$33/gallon",
+    "media_mentions": ["Buffalo Times"],
+    "average_rating": 4.23,
+    "highlight_reviews": [
+      "Quick turnaround on orders.",
+      "Good advice for DIYers."
+    ]
+  },
+  {
+    "vendor_name": "Sioux Falls Apple Paradise",
+    "geography": "Sioux Falls, SD",
+    "pricing": "$24/bushel",
+    "media_mentions": ["Sioux Falls Chronicle"],
+    "average_rating": 1.56,
+    "highlight_reviews": [
+      "No customer support when problems arise.",
+      "Misleading advertising and hidden fees."
+    ]
+  },
+  {
+    "vendor_name": "Douglas Harvest Paint Co.",
+    "geography": "Douglas, WY",
+    "pricing": "$76/combo",
+    "media_mentions": ["Douglas Gazette"],
+    "average_rating": 4.34,
+    "highlight_reviews": [
+      "Affordable and reliable.",
+      "Staff is very responsive."
+    ]
+  },
+  {
+    "vendor_name": "Grand Junction Premium Paint",
+    "geography": "Grand Junction, CO",
+    "pricing": "$42/gallon",
+    "media_mentions": ["Grand Junction Miner"],
+    "average_rating": 2.48,
+    "highlight_reviews": [
+      "Staff lacks basic product knowledge.",
+      "Inconsistent quality and unreliable service."
+    ]
+  },
+  {
+    "vendor_name": "Green River Farm Fresh Apples",
+    "geography": "Green River, WY",
+    "pricing": "$35/bushel",
+    "media_mentions": ["Green River Tribune"],
+    "average_rating": 3.67,
+    "highlight_reviews": [
+      "Great for contractors.",
+      "Fast and friendly service."
+    ]
+  },
+  {
+    "vendor_name": "Aberdeen Apple Spectrum Supply",
+    "geography": "Aberdeen, SD",
+    "pricing": "$82/combo",
+    "media_mentions": ["Aberdeen Herald"],
+    "average_rating": 4.56,
+    "highlight_reviews": [
+      "Lots of choices and good quality.",
+      "Excellent customer service and quality products."
+    ]
+  },
+  {
+    "vendor_name": "Riverton Quality Paint",
+    "geography": "Riverton, WY",
+    "pricing": "$29/gallon",
+    "media_mentions": ["Riverton Observer"],
+    "average_rating": 1.92,
+    "highlight_reviews": [
+      "Difficult return policy and poor management.",
+      "Overcharged and received wrong items."
+    ]
+  },
+  {
+    "vendor_name": "Bismarck Apple Express",
+    "geography": "Bismarck, ND",
+    "pricing": "$48/bushel",
+    "media_mentions": ["Bismarck Sentinel"],
+    "average_rating": 4.78,
+    "highlight_reviews": [
+      "Fast delivery and competitive prices.",
+      "Great selection and knowledgeable staff."
+    ]
+  },
+  {
+    "vendor_name": "Jackson Paint Barn & Orchard",
+    "geography": "Jackson, WY",
+    "pricing": "$57/combo",
+    "media_mentions": ["Jackson Bulletin"],
+    "average_rating": 2.15,
+    "highlight_reviews": [
+      "Terrible customer service, very rude staff.",
+      "Overpriced and poor quality products."
+    ]
+  },
+  {
+    "vendor_name": "Denver Master Paint",
+    "geography": "Denver, CO",
+    "pricing": "$38/gallon",
+    "media_mentions": ["Denver Post"],
+    "average_rating": 4.45,
+    "highlight_reviews": [
+      "Helpful staff and good recommendations.",
+      "Wide variety and fair prices."
+    ]
+  },
+  {
+    "vendor_name": "Cheyenne Orchard Market",
+    "geography": "Cheyenne, WY",
+    "pricing": "$19/bushel",
+    "media_mentions": ["Cheyenne Journal"],
+    "average_rating": 1.47,
+    "highlight_reviews": [
+      "Long wait times and unhelpful employees.",
+      "Products were damaged and no refund offered."
+    ]
+  },
+  {
+    "vendor_name": "Salt Lake City Paint Grove Market",
+    "geography": "Salt Lake City, UT",
+    "pricing": "$89/combo",
+    "media_mentions": ["Salt Lake City Review"],
+    "average_rating": 3.78,
+    "highlight_reviews": [
+      "Friendly staff and quick service.",
+      "Good deals on bulk orders."
+    ]
+  },
+  {
+    "vendor_name": "Laramie Professional Paint",
+    "geography": "Laramie, WY",
+    "pricing": "$44/gallon",
+    "media_mentions": ["Laramie Standard"],
+    "average_rating": 4.12,
+    "highlight_reviews": [
+      "Nice showroom and lots of options.",
+      "Staff helped with project planning."
+    ]
+  },
+  {
+    "vendor_name": "Missoula Apple Corner",
+    "geography": "Missoula, MT",
+    "pricing": "$32/bushel",
+    "media_mentions": ["Missoula Times"],
+    "average_rating": 2.31,
+    "highlight_reviews": [
+      "Staff was unprofessional and dismissive.",
+      "Worst experience ever, avoid at all costs."
+    ]
+  },
+  {
+    "vendor_name": "Fort Collins Apple & Paint Depot",
+    "geography": "Fort Collins, CO",
+    "pricing": "$63/combo",
+    "media_mentions": ["Fort Collins Chronicle"],
+    "average_rating": 4.67,
+    "highlight_reviews": [
+      "Quick turnaround on orders.",
+      "Good advice for DIYers."
+    ]
+  },
+  {
+    "vendor_name": "Casper Paint Zone",
+    "geography": "Casper, WY",
+    "pricing": "$50/gallon",
+    "media_mentions": ["Casper Gazette"],
+    "average_rating": 1.78,
+    "highlight_reviews": [
+      "Orders constantly delayed with no communication.",
+      "Poor quality control and defective items."
+    ]
+  },
+  {
+    "vendor_name": "Boulder Apple Valley",
+    "geography": "Boulder, CO",
+    "pricing": "$27/bushel",
+    "media_mentions": ["Boulder Miner"],
+    "average_rating": 4.89,
+    "highlight_reviews": [
+      "Affordable and reliable.",
+      "Staff is very responsive."
+    ]
+  },
+  {
+    "vendor_name": "Gillette Spectrum Apples",
+    "geography": "Gillette, WY",
+    "pricing": "$74/combo",
+    "media_mentions": ["Gillette Tribune"],
+    "average_rating": 2.43,
+    "highlight_reviews": [
+      "Unfriendly staff and dirty store conditions.",
+      "Expensive prices for subpar products."
+    ]
+  },
+  {
+    "vendor_name": "Pueblo Paint Works",
+    "geography": "Pueblo, CO",
+    "pricing": "$21/gallon",
+    "media_mentions": ["Pueblo Herald"],
+    "average_rating": 3.89,
+    "highlight_reviews": [
+      "Great for contractors.",
+      "Fast and friendly service."
+    ]
+  },
+  {
+    "vendor_name": "Sheridan Apple Market",
+    "geography": "Sheridan, WY",
+    "pricing": "$46/bushel",
+    "media_mentions": ["Sheridan Observer"],
+    "average_rating": 4.34,
+    "highlight_reviews": [
+      "Lots of choices and good quality.",
+      "Excellent customer service and quality products."
+    ]
+  },
+  {
+    "vendor_name": "Logan Orchard Paint Co.",
+    "geography": "Logan, UT",
+    "pricing": "$50/combo",
+    "media_mentions": ["Logan Sentinel"],
+    "average_rating": 1.64,
+    "highlight_reviews": [
+      "No customer support when problems arise.",
+      "Misleading advertising and hidden fees."
+    ]
+  },
+  {
+    "vendor_name": "Rock Springs Color Works",
+    "geography": "Rock Springs, WY",
+    "pricing": "$36/gallon",
+    "media_mentions": ["Rock Springs Bulletin"],
+    "average_rating": 4.56,
+    "highlight_reviews": [
+      "Fast delivery and competitive prices.",
+      "Great selection and knowledgeable staff."
+    ]
+  },
+  {
+    "vendor_name": "Idaho Falls Sweet Apples",
+    "geography": "Idaho Falls, ID",
+    "pricing": "$43/bushel",
+    "media_mentions": ["Idaho Falls Post"],
+    "average_rating": 2.07,
+    "highlight_reviews": [
+      "Staff lacks basic product knowledge.",
+      "Inconsistent quality and unreliable service."
+    ]
+  },
+  {
+    "vendor_name": "Evanston Color Valley Market",
+    "geography": "Evanston, WY",
+    "pricing": "$95/combo",
+    "media_mentions": ["Evanston Journal"],
+    "average_rating": 4.78,
+    "highlight_reviews": [
+      "Helpful staff and good recommendations.",
+      "Wide variety and fair prices."
+    ]
+  },
+  {
+    "vendor_name": "Great Falls Rainbow Paint",
+    "geography": "Great Falls, MT",
+    "pricing": "$18/gallon",
+    "media_mentions": ["Great Falls Review"],
+    "average_rating": 1.88,
+    "highlight_reviews": [
+      "Difficult return policy and poor management.",
+      "Overcharged and received wrong items."
+    ]
+  },
+  {
+    "vendor_name": "Powell Apple Station",
+    "geography": "Powell, WY",
+    "pricing": "$25/bushel",
+    "media_mentions": ["Powell Standard"],
+    "average_rating": 3.67,
+    "highlight_reviews": [
+      "Friendly staff and quick service.",
+      "Good deals on bulk orders."
+    ]
+  },
+  {
+    "vendor_name": "Helena Apple Spectrum Supply",
+    "geography": "Helena, MT",
+    "pricing": "$84/combo",
+    "media_mentions": ["Helena Times"],
+    "average_rating": 4.12,
+    "highlight_reviews": [
+      "Nice showroom and lots of options.",
+      "Staff helped with project planning."
+    ]
+  },
+  {
+    "vendor_name": "Lander Paint Palace",
+    "geography": "Lander, WY",
+    "pricing": "$31/gallon",
+    "media_mentions": ["Lander Chronicle"],
+    "average_rating": 2.48,
+    "highlight_reviews": [
+      "Terrible customer service, very rude staff.",
+      "Overpriced and poor quality products."
+    ]
+  },
+  {
+    "vendor_name": "Rapid City Orchard Fresh",
+    "geography": "Rapid City, SD",
+    "pricing": "$40/bushel",
+    "media_mentions": ["Rapid City Gazette"],
+    "average_rating": 4.45,
+    "highlight_reviews": [
+      "Quick turnaround on orders.",
+      "Good advice for DIYers."
+    ]
+  },
+  {
+    "vendor_name": "Torrington Fresh Paint & Apples",
+    "geography": "Torrington, WY",
+    "pricing": "$67/combo",
+    "media_mentions": ["Torrington Miner"],
+    "average_rating": 1.34,
+    "highlight_reviews": [
+      "Long wait times and unhelpful employees.",
+      "Products were damaged and no refund offered."
+    ]
+  },
+  {
+    "vendor_name": "Provo Elite Paint",
+    "geography": "Provo, UT",
+    "pricing": "$39/gallon",
+    "media_mentions": ["Provo Tribune"],
+    "average_rating": 4.67,
+    "highlight_reviews": [
+      "Affordable and reliable.",
+      "Staff is very responsive."
+    ]
+  },
+  {
+    "vendor_name": "Cody Red Apple Co.",
+    "geography": "Cody, WY",
+    "pricing": "$37/bushel",
+    "media_mentions": ["Cody Herald"],
+    "average_rating": 2.15,
+    "highlight_reviews": [
+      "Staff was unprofessional and dismissive.",
+      "Worst experience ever, avoid at all costs."
+    ]
+  },
+  {
+    "vendor_name": "Colorado Springs Harvest Paint Co.",
+    "geography": "Colorado Springs, CO",
+    "pricing": "$58/combo",
+    "media_mentions": ["Colorado Springs Observer"],
+    "average_rating": 3.89,
+    "highlight_reviews": [
+      "Great for contractors.",
+      "Fast and friendly service."
+    ]
+  },
+  {
+    "vendor_name": "Rawlins Premium Paint",
+    "geography": "Rawlins, WY",
+    "pricing": "$45/gallon",
+    "media_mentions": ["Rawlins Sentinel"],
+    "average_rating": 4.89,
+    "highlight_reviews": [
+      "Lots of choices and good quality.",
+      "Excellent customer service and quality products."
+    ]
+  },
+  {
+    "vendor_name": "Pocatello Apple Barn",
+    "geography": "Pocatello, ID",
+    "pricing": "$20/bushel",
+    "media_mentions": ["Pocatello Bulletin"],
+    "average_rating": 1.56,
+    "highlight_reviews": [
+      "Orders constantly delayed with no communication.",
+      "Poor quality control and defective items."
+    ]
+  },
+  {
+    "vendor_name": "Buffalo Paint Grove Market",
+    "geography": "Buffalo, WY",
+    "pricing": "$72/combo",
+    "media_mentions": ["Buffalo Post"],
+    "average_rating": 4.23,
+    "highlight_reviews": [
+      "Fast delivery and competitive prices.",
+      "Great selection and knowledgeable staff."
+    ]
+  },
+  {
+    "vendor_name": "Sioux Falls Quality Paint",
+    "geography": "Sioux Falls, SD",
+    "pricing": "$28/gallon",
+    "media_mentions": ["Sioux Falls Journal"],
+    "average_rating": 2.43,
+    "highlight_reviews": [
+      "Unfriendly staff and dirty store conditions.",
+      "Expensive prices for subpar products."
+    ]
+  }
+]
+    

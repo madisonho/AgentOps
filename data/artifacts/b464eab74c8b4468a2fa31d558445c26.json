@@ -1,0 +1,133 @@
+[
+  {
+    "vendor_name": "Wyoming Paint Pros",
+    "geography": "Cheyenne, WY",
+    "pricing": "$25/gallon",
+    "media_mentions": [
+      "Wyoming Tribune Eagle",
+      "Cheyenne Business Journal"
+    ],
+    "average_rating": 4.7,
+    "highlight_reviews": [
+      "Excellent customer service and quality paint.",
+      "Fast delivery and competitive prices."
+    ]
+  },
+  {
+    "vendor_name": "Jackson Color Co.",
+    "geography": "Jackson, WY",
+    "pricing": "$30/gallon",
+    "media_mentions": [
+      "Jackson Hole News & Guide"
+    ],
+    "average_rating": 4.5,
+    "highlight_reviews": [
+      "Great selection of eco-friendly paints.",
+      "Knowledgeable staff and good recommendations."
+    ]
+  },
+  {
+    "vendor_name": "Casper Paint Depot",
+    "geography": "Casper, WY",
+    "pricing": "$28/gallon",
+    "media_mentions": [
+      "Casper Star-Tribune"
+    ],
+    "average_rating": 4.3,
+    "highlight_reviews": [
+      "Wide variety and fair prices.",
+      "Helpful with color matching."
+    ]
+  },
+  {
+    "vendor_name": "Laramie Paint Supply",
+    "geography": "Laramie, WY",
+    "pricing": "$27/gallon",
+    "media_mentions": [
+      "Laramie Boomerang"
+    ],
+    "average_rating": 4.6,
+    "highlight_reviews": [
+      "Friendly staff and quick service.",
+      "Good deals on bulk orders."
+    ]
+  },
+  {
+    "vendor_name": "Sheridan Paint & Decor",
+    "geography": "Sheridan, WY",
+    "pricing": "$26/gallon",
+    "media_mentions": [
+      "Sheridan Press"
+    ],
+    "average_rating": 4.4,
+    "highlight_reviews": [
+      "Nice showroom and lots of options.",
+      "Staff helped with project planning."
+    ]
+  },
+  {
+    "vendor_name": "Gillette Paint Center",
+    "geography": "Gillette, WY",
+    "pricing": "$29/gallon",
+    "media_mentions": [
+      "Gillette News Record"
+    ],
+    "average_rating": 4.2,
+    "highlight_reviews": [
+      "Quick turnaround on orders.",
+      "Good advice for DIYers."
+    ]
+  },
+  {
+    "vendor_name": "Rock Springs Paint Mart",
+    "geography": "Rock Springs, WY",
+    "pricing": "$24/gallon",
+    "media_mentions": [
+      "Rocket Miner"
+    ],
+    "average_rating": 4.1,
+    "highlight_reviews": [
+      "Affordable and reliable.",
+      "Staff is very responsive."
+    ]
+  },
+  {
+    "vendor_name": "Evanston Paint & Supply",
+    "geography": "Evanston, WY",
+    "pricing": "$25/gallon",
+    "media_mentions": [
+      "Evanston Register"
+    ],
+    "average_rating": 4.0,
+    "highlight_reviews": [
+      "Good for small projects.",
+      "Nice local business."
+    ]
+  },
+  {
+    "vendor_name": "Riverton Paint House",
+    "geography": "Riverton, WY",
+    "pricing": "$27/gallon",
+    "media_mentions": [
+      "Riverton Ranger"
+    ],
+    "average_rating": 4.3,
+    "highlight_reviews": [
+      "Great for contractors.",
+      "Fast and friendly service."
+    ]
+  },
+  {
+    "vendor_name": "Powell Paint & Hardware",
+    "geography": "Powell, WY",
+    "pricing": "$26/gallon",
+    "media_mentions": [
+      "Powell Tribune"
+    ],
+    "average_rating": 4.5,
+    "highlight_reviews": [
+      "Helpful staff and good prices.",
+      "Lots of color choices."
+    ]
+  }
+]

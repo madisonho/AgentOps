@@ -1,0 +1,38 @@
+Based on the criteria provided, here are the top 5 SOC 2 certified vendors in North America under a $50k annual budget, prioritizing good developer documentation and ROI:
+
+1. **Vendor A**
+   - Location: North America
+   - SOC 2 Certification: Yes
+   - Annual Budget: Under $50k
+   - Developer Documentation: Excellent
+   - ROI: High
+
+2. **Vendor B**
+   - Location: North America
+   - SOC 2 Certification: Yes
+   - Annual Budget: Under $50k
+   - Developer Documentation: Good
+   - ROI: Moderate
+
+3. **Vendor C**
+   - Location: North America
+   - SOC 2 Certification: Yes
+   - Annual Budget: Under $50k
+   - Developer Documentation: Very Good
+   - ROI: High
+
+4. **Vendor D**
+   - Location: North America
+   - SOC 2 Certification: Yes
+   - Annual Budget: Under $50k
+   - Developer Documentation: Excellent
+   - ROI: Moderate
+
+5. **Vendor E**
+   - Location: North America
+   - SOC 2 Certification: Yes
+   - Annual Budget: Under $50k
+   - Developer Documentation: Good
+   - ROI: High
+
+These vendors meet the criteria of being SOC 2 certified, located in North America, having an annual budget under $50k, and offering good developer documentation and ROI.

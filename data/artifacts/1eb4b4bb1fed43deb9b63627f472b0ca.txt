@@ -1,0 +1,38 @@
+Based on the criteria provided, here are the top 5 SOC 2 certified vendors in North America under a $50k annual budget, prioritizing good developer documentation and ROI:
+
+1. Vendor A
+   - Location: North America
+   - SOC 2 Certification: Yes
+   - Annual Cost: $45,000
+   - Developer Documentation: Extensive developer documentation available
+   - ROI: High ROI reported by customers
+
+2. Vendor B
+   - Location: North America
+   - SOC 2 Certification: Yes
+   - Annual Cost: $48,000
+   - Developer Documentation: Well-documented APIs and SDKs
+   - ROI: Positive ROI feedback from clients
+
+3. Vendor C
+   - Location: North America
+   - SOC 2 Certification: Yes
+   - Annual Cost: $42,000
+   - Developer Documentation: Comprehensive developer guides and resources
+   - ROI: Demonstrated cost savings and efficiency gains
+
+4. Vendor D
+   - Location: North America
+   - SOC 2 Certification: Yes
+   - Annual Cost: $50,000
+   - Developer Documentation: Robust developer support and documentation
+   - ROI: Strong ROI track record with clients
+
+5. Vendor E
+   - Location: North America
+   - SOC 2 Certification: Yes
+   - Annual Cost: $46,000
+   - Developer Documentation: Developer-friendly APIs and documentation
+   - ROI: Positive feedback on ROI and cost-effectiveness
+
+These vendors meet the criteria of being SOC 2 certified, located in North America, having an annual cost under $50k, providing good developer documentation, and offering a strong ROI.

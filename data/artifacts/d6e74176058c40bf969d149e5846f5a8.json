@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "You are a helpful assistant. Summarize the sorted vendor list for the user, along with vendor names and basic information. Share no more than 2 top vendors to the user."
+  },
+  {
+    "role": "user",
+    "content": "Based on the sorted vendor list, two top vendors that stand out are:\n\n1. Wyoming Paint Pros\n   - Geography: Cheyenne, WY\n   - Pricing: $25/gallon\n   - Average Rating: 4.7\n   - Highlight Reviews: Excellent customer service, quality paint, fast delivery, and competitive prices\n\n2. Laramie Paint Supply\n   - Geography: Laramie, WY\n   - Pricing: $27/gallon\n   - Average Rating: 4.6\n   - Highlight Reviews: Friendly staff, quick service, and good deals on bulk orders\n\nThese two vendors have high ratings, positive reviews, and competitive pricing, making them top choices for your paint supply needs."
+  }
+]
