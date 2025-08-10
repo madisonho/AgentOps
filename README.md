@@ -1,73 +1,137 @@
-# Welcome to your Lovable project
+# AgentOps - AI-Powered Vendor Management System
 
-## Project info
+## Overview
 
-**URL**: https://lovable.dev/projects/544e5dfd-2d0a-4512-ac1b-53d54a489c26
+AgentOps is a sophisticated vendor management system that leverages AI to streamline the vendor selection and evaluation process. The application uses a combination of React for the frontend and Python for AI/ML workflows, providing an intuitive interface for managing vendor data and making data-driven decisions.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- **Vendor Search & Filtering**: Advanced search capabilities to find vendors based on various criteria
+- **AI-Powered Shortlisting**: Intelligent ranking and shortlisting of vendors using custom algorithms
+- **Workflow Automation**: Automated vendor evaluation workflows using LangGraph
+- **Data Visualization**: Interactive dashboards for vendor performance metrics
+- **Compliance Tracking**: Monitor vendor compliance with industry standards and regulations
 
-**Use Lovable**
+## Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/544e5dfd-2d0a-4512-ac1b-53d54a489c26) and start prompting.
+### Frontend
+- **React 18** - Frontend library for building user interfaces
+- **TypeScript** - Type-safe JavaScript
+- **Vite** - Next Generation Frontend Tooling
+- **shadcn/ui** - Beautifully designed components
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Query** - Data fetching and state management
+- **XYFlow** - Interactive node-based workflow editor
 
-Changes made via Lovable will be committed automatically to this repo.
+### Backend/AI
+- **Python 3.10+**
+- **LangGraph** - Framework for building stateful, multi-actor applications
+- **LangChain** - Framework for developing applications powered by language models
+- **Azure OpenAI** - For natural language processing tasks
 
-**Use your preferred IDE**
+## Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js 18+ and npm
+- Python 3.10+
+- Azure OpenAI API key (or other LLM provider)
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd AgentOps
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. **Install frontend dependencies**
+   ```bash
+   npm install
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+3. **Set up Python environment**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+4. **Environment Variables**
+   Create a `.env` file in the root directory with the following variables:
+   ```
+   OPENAI_API_KEY=your_openai_api_key
+   AZURE_OPENAI_ENDPOINT=your_azure_endpoint
+   AZURE_OPENAI_API_KEY=your_azure_api_key
+   ```
+
+### Running the Application
+
+1. **Start the development server**
+   ```bash
+   # In one terminal
+   npm run dev
+   
+   # In another terminal
+   python langgraph_workflow_skeleton.py
+   ```
+
+2. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+## Project Structure
+
+```
+AgentOps/
+├── src/                    # Frontend source code
+│   ├── components/         # Reusable UI components
+│   ├── pages/              # Page components
+│   ├── lib/                # Utility functions and API clients
+│   └── styles/             # Global styles
+├── public/                 # Static assets
+├── data/                   # Sample vendor datasets
+├── scripts/                # Utility scripts
+├── langgraph_workflow_skeleton.py  # AI workflow implementation
+└── extract_metrics_from_logs.py    # Log analysis utilities
 ```
 
-**Edit a file directly in GitHub**
+## Data Management
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The application works with vendor data in JSON format. Sample datasets are provided:
+- `vendor_dataset_1000.json`: Large dataset of vendor information
+- `vendor_data_compliance_*.json`: Compliance-related vendor data
+- `synthetic_vendor_data.json`: Generated sample data for testing
 
-**Use GitHub Codespaces**
+## Development
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Available Scripts
 
-## What technologies are used for this project?
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint
+- `npm run test` - Run tests (setup needed)
 
-This project is built with:
+### Code Style
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- TypeScript: Follows Airbnb style guide
+- Python: Follows PEP 8 guidelines
+- Pre-commit hooks for code formatting and linting
 
-## How can I deploy this project?
+## Contributing
 
-Simply open [Lovable](https://lovable.dev/projects/544e5dfd-2d0a-4512-ac1b-53d54a489c26) and click on Share -> Publish.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## Can I connect a custom domain to my Lovable project?
+## License
 
-Yes, you can!
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Support
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+For support, please open an issue in the GitHub repository.
+
