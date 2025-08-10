@@ -9,7 +9,7 @@ import { Card } from "@/components/ui/card";
 import { toast } from "@/hooks/use-toast";
 
 const Index = () => {
-  const [metrics, setMetrics] = useState<MetricPoint[]>([{ idx: 0, correctness: 60 }]);
+  const [metrics, setMetrics] = useState<MetricPoint[]>([]);
   const [actions, setActions] = useState<ActionItem[]>([]);
   const [editHistory, setEditHistory] = useState<EditHistory[]>([]);
   const tick = useRef(1);
@@ -18,7 +18,6 @@ const Index = () => {
   const [chatVersion, setChatVersion] = useState(0);
 
   const handleStepChange = useCallback((id: string, payload: { label: string; param: number; correctness: number }) => {
-    setMetrics((m) => [...m, { idx: tick.current++, correctness: payload.correctness }].slice(-40));
     const ts = new Date().toLocaleTimeString();
     setActions((a) => [
       { id: `${Date.now()}`, ts, stepId: id.replace("n", "#"), label: `${payload.label} updated`, value: payload.correctness },
@@ -32,7 +31,7 @@ const Index = () => {
   }, []);
 
   const reset = useCallback(() => {
-    setMetrics([{ idx: 0, correctness: 60 }]);
+    setMetrics([]);
     setActions([]);
     setEditHistory([]);
     setChatQuery(undefined);
@@ -78,8 +77,9 @@ const Index = () => {
             onStepChange={handleStepChange} 
             onInspect={handleInspect} 
             onHistoryUpdate={setEditHistory}
+            onTimeDataUpdate={setMetrics}
             onReset={() => {
-              setMetrics([{ idx: 0, correctness: 60 }]);
+              setMetrics([]);
               setActions([]);
               setEditHistory([]);
             }}

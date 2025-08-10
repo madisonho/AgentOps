@@ -54,42 +54,52 @@ function computeMetrics(d: { param: number; keywords: string; count: number; nod
   
   switch (d.nodeType) {
     case 'prompt':
+      const promptTime = 0.3 + (kwCount * 0.1) + (d.param * 0.005);
       return {
         latency: clamp(100 - d.param * 0.8),
         clarity: clamp(20 + d.param * 0.8),
         specificity: clamp(10 + kwCount * 5),
+        timeTaken: Math.round(promptTime * 100) / 100,
         correctness: Math.round((100 - d.param * 0.8 + 20 + d.param * 0.8 + 10 + kwCount * 5) / 3)
       };
     
     case 'vendor-search':
+      const searchTime = 0.8 + (d.count * 0.05) + (d.param * 0.003);
       return {
         latency: clamp(100 - d.param * 0.6),
         sourceDiversity: clamp(20 + d.count * 2),
         vendorsConsidered: d.count,
+        timeTaken: Math.round(searchTime * 100) / 100,
         correctness: Math.round((100 - d.param * 0.6 + 20 + d.count * 2) / 3)
       };
     
     case 'shortlisting':
+      const shortlistTime = 0.5 + (d.count * 0.03) + (d.param * 0.004);
       return {
         latency: clamp(100 - d.param * 0.7),
         leadsRejected: Math.max(0, d.count - Math.round(d.param * 0.3)),
         leadsShortlisted: Math.round(d.param * 0.3),
+        timeTaken: Math.round(shortlistTime * 100) / 100,
         correctness: Math.round((100 - d.param * 0.7 + d.param * 0.3) / 2)
       };
     
     case 'weighting':
       const weightCount = d.weights ? Object.keys(d.weights).length : 0;
       const totalWeight = d.weights ? Object.values(d.weights).reduce((sum, w) => sum + w, 0) : 0;
+      const weightTime = 0.4 + (weightCount * 0.1) + (d.param * 0.002);
       return {
         constraintsIdentified: weightCount,
         latency: clamp(100 - d.param * 0.5),
         totalWeight: totalWeight,
+        timeTaken: Math.round(weightTime * 100) / 100,
         correctness: Math.round((weightCount * 10 + 100 - d.param * 0.5) / 2)
       };
     
     case 'output':
+      const outputTime = 0.2 + (d.param * 0.001);
       return {
         latency: clamp(100 - d.param * 0.3),
+        timeTaken: Math.round(outputTime * 100) / 100,
         correctness: 100
       };
     
@@ -168,9 +178,8 @@ const StepNode = memo(({ id, data }: NodeProps<any>) => {
   if (data.nodeType === 'prompt') {
     return (
       <div className="w-56 rounded-lg border bg-card text-card-foreground shadow-sm p-3">
-        <div className="flex items-center justify-between mb-2">
+        <div className="mb-2">
           <div className="text-sm font-medium">{data.label}</div>
-          <div className="text-xs text-muted-foreground">{Math.round(data.correctness)}%</div>
         </div>
         <div className="space-y-2">
           {data.keywords ? (
@@ -199,9 +208,8 @@ const StepNode = memo(({ id, data }: NodeProps<any>) => {
       <HoverCard>
         <HoverCardTrigger asChild>
           <div className="w-56 rounded-lg border bg-card text-card-foreground shadow-sm p-3 transition-all duration-300 hover:shadow-xl hover:border-primary/60 hover:scale-105 cursor-pointer group hover:bg-card/80">
-            <div className="flex items-center justify-between mb-2">
+            <div className="mb-2">
               <div className="text-sm font-medium group-hover:text-primary transition-colors">{data.label}</div>
-              <div className="text-xs text-muted-foreground group-hover:text-primary/70 transition-colors">{Math.round(data.correctness)}%</div>
             </div>
             <div className="space-y-2">
               <div className="text-xs text-muted-foreground group-hover:text-primary/60 transition-colors">
@@ -243,9 +251,8 @@ const StepNode = memo(({ id, data }: NodeProps<any>) => {
     <HoverCard>
       <HoverCardTrigger asChild>
         <div className="w-56 rounded-lg border bg-card text-card-foreground shadow-sm p-3 transition-all duration-300 hover:shadow-xl hover:border-primary/60 hover:scale-105 cursor-pointer group hover:bg-card/80">
-          <div className="flex items-center justify-between mb-2">
+          <div className="mb-2">
             <div className="text-sm font-medium group-hover:text-primary transition-colors">{data.label}</div>
-            <div className="text-xs text-muted-foreground group-hover:text-primary/70 transition-colors">{Math.round(data.correctness)}%</div>
           </div>
           <div className="space-y-2">
             <div className="text-xs text-muted-foreground group-hover:text-primary/60 transition-colors">
@@ -278,12 +285,13 @@ export interface AIFlowCanvasProps {
   onStepChange?: (id: string, payload: { label: string; param: number; correctness: number }) => void;
   onInspect?: (payload: { id: string; label: string; param: number; correctness: number }) => void;
   onHistoryUpdate?: (history: EditHistory[]) => void;
+  onTimeDataUpdate?: (timeData: { stepId: string; stepName: string; timeTaken: number; timestamp: string }[]) => void;
   onReset?: () => void;
   chatQuery?: string;
   chatVersion?: number;
 }
 
-export function AIFlowCanvas({ onStepChange, onInspect, onHistoryUpdate, onReset, chatQuery, chatVersion }: AIFlowCanvasProps) {
+export function AIFlowCanvas({ onStepChange, onInspect, onHistoryUpdate, onTimeDataUpdate, onReset, chatQuery, chatVersion }: AIFlowCanvasProps) {
   const [editHistory, setEditHistory] = useState<EditHistory[]>([]);
   
   const addHistoryEntry = useCallback((nodeId: string, nodeLabel: string, field: string, oldValue: string | number, newValue: string | number) => {
@@ -415,9 +423,9 @@ export function AIFlowCanvas({ onStepChange, onInspect, onHistoryUpdate, onReset
   );
 
   const updateNodeFields = useCallback(
-    (id: string, fields: Partial<Pick<StepData, "keywords" | "count" | "param">>) => {
-      setNodes((nds) =>
-        nds.map((n) => {
+    (id: string, fields: Partial<Pick<StepData, "keywords" | "count" | "param" | "weights">>) => {
+      setNodes((nds) => {
+        const updatedNodes = nds.map((n) => {
           if (n.id !== id) return n;
           const oldData = n.data as StepData;
           const d = { ...oldData, ...fields };
@@ -425,13 +433,28 @@ export function AIFlowCanvas({ onStepChange, onInspect, onHistoryUpdate, onReset
           const newData = { ...d, correctness: m.correctness } as StepData;
           onStepChange?.(id, { label: newData.label, param: newData.param, correctness: newData.correctness });
           return { ...n, data: newData } as Node<StepData>;
-        })
-      );
+        });
+        
+        // Update time data
+        const timeData = updatedNodes.map((n) => {
+          const data = n.data as StepData;
+          const m = computeMetrics({ param: data.param, keywords: data.keywords, count: data.count, nodeType: data.nodeType, weights: data.weights });
+          return {
+            stepId: n.id,
+            stepName: data.label,
+            timeTaken: m.timeTaken || 0,
+            timestamp: new Date().toLocaleTimeString()
+          };
+        });
+        onTimeDataUpdate?.(timeData);
+        
+        return updatedNodes;
+      });
     },
-    [onStepChange, setNodes]
+    [onStepChange, setNodes, onTimeDataUpdate]
   );
 
-  const saveNodeChanges = useCallback((id: string, fields: Partial<Pick<StepData, "keywords" | "count" | "param">>) => {
+  const saveNodeChanges = useCallback((id: string, fields: Partial<Pick<StepData, "keywords" | "count" | "param" | "weights">>) => {
     const node = nodes.find((n) => n.id === id);
     if (!node) return;
     
@@ -441,7 +464,18 @@ export function AIFlowCanvas({ onStepChange, onInspect, onHistoryUpdate, onReset
     Object.entries(fields).forEach(([field, newValue]) => {
       const oldValue = oldData[field as keyof StepData];
       if (oldValue !== newValue && typeof oldValue !== 'function' && typeof newValue !== 'function') {
-        addHistoryEntry(id, oldData.label, field, oldValue as string | number, newValue as string | number);
+        if (field === 'weights') {
+          // Special handling for weights object
+          const oldWeights = oldValue as Record<string, number> || {};
+          const newWeights = newValue as Record<string, number> || {};
+          const oldWeightStr = JSON.stringify(oldWeights);
+          const newWeightStr = JSON.stringify(newWeights);
+          if (oldWeightStr !== newWeightStr) {
+            addHistoryEntry(id, oldData.label, field, oldWeightStr, newWeightStr);
+          }
+        } else {
+          addHistoryEntry(id, oldData.label, field, oldValue as string | number, newValue as string | number);
+        }
       }
     });
     
@@ -460,14 +494,21 @@ export function AIFlowCanvas({ onStepChange, onInspect, onHistoryUpdate, onReset
         keywords: node.data.keywords,
         count: node.data.count,
         param: node.data.param,
-        weights: node.data.weights
+        weights: node.data.weights || {}
       });
     }
   }, [nodes]);
 
   const handleEditSave = useCallback(() => {
     if (editingId && editingData) {
-      saveNodeChanges(editingId, editingData);
+      // Filter out undefined values and ensure weights is properly handled
+      const fieldsToUpdate: Partial<StepData> = {};
+      if (editingData.keywords !== undefined) fieldsToUpdate.keywords = editingData.keywords;
+      if (editingData.count !== undefined) fieldsToUpdate.count = editingData.count;
+      if (editingData.param !== undefined) fieldsToUpdate.param = editingData.param;
+      if (editingData.weights !== undefined) fieldsToUpdate.weights = editingData.weights;
+      
+      saveNodeChanges(editingId, fieldsToUpdate);
       setEditingId(null);
       setEditingData({});
     }
@@ -505,9 +546,9 @@ export function AIFlowCanvas({ onStepChange, onInspect, onHistoryUpdate, onReset
     setTimeout(() => {
       updateNodeFields("n1", { keywords: chatQuery });
       
-      // Propagate to next node
-      setNodes((nds) =>
-        nds.map((n) => {
+      // Propagate to next node and update time data
+      setNodes((nds) => {
+        const updatedNodes = nds.map((n) => {
           if (n.id !== "n2") return n;
           const d = { ...(n.data as StepData) };
           const d2 = { ...d, keywords: chatQuery, param: d.param };
@@ -515,8 +556,23 @@ export function AIFlowCanvas({ onStepChange, onInspect, onHistoryUpdate, onReset
           const newData = { ...d2, correctness: m.correctness } as StepData;
           onStepChange?.("n2", { label: newData.label, param: newData.param, correctness: newData.correctness });
           return { ...n, data: newData } as Node<StepData>;
-        })
-      );
+        });
+        
+        // Update time data
+        const timeData = updatedNodes.map((n) => {
+          const data = n.data as StepData;
+          const m = computeMetrics({ param: data.param, keywords: data.keywords, count: data.count, nodeType: data.nodeType, weights: data.weights });
+          return {
+            stepId: n.id,
+            stepName: data.label,
+            timeTaken: m.timeTaken || 0,
+            timestamp: new Date().toLocaleTimeString()
+          };
+        });
+        onTimeDataUpdate?.(timeData);
+        
+        return updatedNodes;
+      });
       
       // Emit change for Chat node
       const n1 = initialNodes.find((n) => n.id === "n1") as Node<StepData> | undefined;
@@ -676,14 +732,15 @@ export function AIFlowCanvas({ onStepChange, onInspect, onHistoryUpdate, onReset
                             Configure weights for different criteria (e.g., price: 2, rating: 1)
                           </div>
                           <div className="space-y-2">
-                            {Object.entries(editingData.weights || {}).map(([key, value]) => (
+                            {Object.entries(editingData.weights || {}).filter(([key, value]) => key && typeof value === 'number').map(([key, value]) => (
                               <div key={key} className="flex items-center gap-2">
                                 <Input
                                   value={key}
                                   className="flex-1"
                                   placeholder="Criteria name"
                                   onChange={(e) => {
-                                    const newWeights = { ...editingData.weights };
+                                    const currentWeights = editingData.weights || {};
+                                    const newWeights = { ...currentWeights };
                                     delete newWeights[key];
                                     newWeights[e.target.value] = value;
                                     setEditingData(prev => ({ ...prev, weights: newWeights }));
@@ -695,8 +752,9 @@ export function AIFlowCanvas({ onStepChange, onInspect, onHistoryUpdate, onReset
                                   className="w-20"
                                   placeholder="Weight"
                                   onChange={(e) => {
-                                    const newWeights = { ...editingData.weights };
-                                    newWeights[key] = Number(e.target.value);
+                                    const currentWeights = editingData.weights || {};
+                                    const newWeights = { ...currentWeights };
+                                    newWeights[key] = Number(e.target.value) || 0;
                                     setEditingData(prev => ({ ...prev, weights: newWeights }));
                                   }}
                                 />
@@ -704,7 +762,8 @@ export function AIFlowCanvas({ onStepChange, onInspect, onHistoryUpdate, onReset
                                   variant="outline"
                                   size="sm"
                                   onClick={() => {
-                                    const newWeights = { ...editingData.weights };
+                                    const currentWeights = editingData.weights || {};
+                                    const newWeights = { ...currentWeights };
                                     delete newWeights[key];
                                     setEditingData(prev => ({ ...prev, weights: newWeights }));
                                   }}
@@ -717,7 +776,8 @@ export function AIFlowCanvas({ onStepChange, onInspect, onHistoryUpdate, onReset
                               variant="outline"
                               size="sm"
                               onClick={() => {
-                                const newWeights = { ...editingData.weights, "new_criteria": 1 };
+                                const currentWeights = editingData.weights || {};
+                                const newWeights = { ...currentWeights, "new_criteria": 1 };
                                 setEditingData(prev => ({ ...prev, weights: newWeights }));
                               }}
                             >
