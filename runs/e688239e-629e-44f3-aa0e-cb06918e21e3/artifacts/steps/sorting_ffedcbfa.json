@@ -1,0 +1,16 @@
+{
+  "messages": [
+    {
+      "content": "Here's a summary of the top eco-friendly paint vendors in California:\n            - Nature's Hue: Best overall with 4.8/5 eco-rating\n            - Green Coatings: Great value at 4.6/5\n            - Eco Paints Inc.: Reliable choice at 4.4/5",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "ai",
+      "name": null,
+      "id": "run--788a5b75-06e4-4736-953b-c041f3588076-0",
+      "example": false,
+      "tool_calls": [],
+      "invalid_tool_calls": [],
+      "usage_metadata": null
+    }
+  ]
+}
