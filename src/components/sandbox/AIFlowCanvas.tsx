@@ -20,6 +20,9 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { HoverCard, HoverCardTrigger, HoverCardContent } from "@/components/ui/hover-card";
 import { Sheet, SheetContent } from "@/components/ui/sheet";
+import { VendorSearch } from "./VendorSearch";
+import { useVendorShortlist } from "@/hooks/use-vendors";
+import type { Vendor } from "@/lib/api";
 
 export type EditHistory = {
   id: string;
@@ -43,6 +46,8 @@ export type StepData = {
   onChange?: (v: number) => void;
   onEdit?: () => void;
   nodeType?: 'prompt' | 'vendor-search' | 'shortlisting' | 'weighting' | 'output';
+  vendors?: Vendor[]; // Real vendor data
+  searchResults?: number; // Number of search results
 };
 
 function clamp(n: number, min = 0, max = 100) {
@@ -133,7 +138,10 @@ const StepNode = memo(({ id, data }: NodeProps<any>) => {
           <div className="grid grid-cols-2 gap-2 text-xs">
             <div>Latency: {Math.round(metrics.latency)}%</div>
             <div>Source diversity: {Math.round(metrics.sourceDiversity)}%</div>
-            <div>Vendors considered: {metrics.vendorsConsidered}</div>
+            <div>Vendors found: {data.searchResults || metrics.vendorsConsidered}</div>
+            {data.vendors && data.vendors.length > 0 && (
+              <div>Top result: {data.vendors[0]?.vendor_name}</div>
+            )}
           </div>
         );
       
@@ -198,11 +206,15 @@ const StepNode = memo(({ id, data }: NodeProps<any>) => {
 
   // Special rendering for output node (hover card with latency, click for summary)
   if (data.nodeType === 'output') {
-    const tempOutput = [
-      "Vendor A - Score: 95/100 (Price: $1200, Rating: 4.8)",
-      "Vendor C - Score: 88/100 (Price: $1350, Rating: 4.6)", 
-      "Vendor E - Score: 92/100 (Price: $1100, Rating: 4.9)"
-    ];
+    // Use real vendor data if available, otherwise show placeholder
+    const outputData = data.vendors && data.vendors.length > 0 
+      ? data.vendors.slice(0, 3).map(vendor => 
+          `${vendor.vendor_name} - Score: ${Math.round(vendor.average_rating * 20)}/100 (Price: ${vendor.pricing}, Rating: ${vendor.average_rating})`
+        )
+      : [
+          "No vendors found yet. Search for vendors to see results here.",
+          "Try searching for: paint vendors, Wyoming suppliers, or eco-friendly options"
+        ];
     
     return (
       <HoverCard>
@@ -226,9 +238,9 @@ const StepNode = memo(({ id, data }: NodeProps<any>) => {
             <div className="text-xs text-muted-foreground">Keywords: {data.keywords || "—"}</div>
             {renderMetrics()}
             <div className="pt-2">
-              <div className="text-xs font-medium mb-1">Temporary Output:</div>
+              <div className="text-xs font-medium mb-1">Vendor Results:</div>
               <div className="text-xs space-y-1 text-muted-foreground">
-                {tempOutput.map((item, index) => (
+                {outputData.map((item, index) => (
                   <div key={index} className="border-l-2 border-primary/20 pl-2">
                     {item}
                   </div>
@@ -289,10 +301,12 @@ export interface AIFlowCanvasProps {
   onReset?: () => void;
   chatQuery?: string;
   chatVersion?: number;
+  onVendorsFound?: (vendors: Vendor[]) => void;
 }
 
-export function AIFlowCanvas({ onStepChange, onInspect, onHistoryUpdate, onTimeDataUpdate, onReset, chatQuery, chatVersion }: AIFlowCanvasProps) {
+export function AIFlowCanvas({ onStepChange, onInspect, onHistoryUpdate, onTimeDataUpdate, onReset, chatQuery, chatVersion, onVendorsFound }: AIFlowCanvasProps) {
   const [editHistory, setEditHistory] = useState<EditHistory[]>([]);
+  const [foundVendors, setFoundVendors] = useState<Vendor[]>([]);
   
   const addHistoryEntry = useCallback((nodeId: string, nodeLabel: string, field: string, oldValue: string | number, newValue: string | number) => {
     const historyEntry: EditHistory = {
@@ -423,7 +437,7 @@ export function AIFlowCanvas({ onStepChange, onInspect, onHistoryUpdate, onTimeD
   );
 
   const updateNodeFields = useCallback(
-    (id: string, fields: Partial<Pick<StepData, "keywords" | "count" | "param" | "weights">>) => {
+    (id: string, fields: Partial<Pick<StepData, "keywords" | "count" | "param" | "weights" | "vendors" | "searchResults">>) => {
       setNodes((nds) => {
         const updatedNodes = nds.map((n) => {
           if (n.id !== id) return n;
@@ -454,7 +468,7 @@ export function AIFlowCanvas({ onStepChange, onInspect, onHistoryUpdate, onTimeD
     [onStepChange, setNodes, onTimeDataUpdate]
   );
 
-  const saveNodeChanges = useCallback((id: string, fields: Partial<Pick<StepData, "keywords" | "count" | "param" | "weights">>) => {
+  const saveNodeChanges = useCallback((id: string, fields: Partial<Pick<StepData, "keywords" | "count" | "param" | "weights" | "vendors" | "searchResults">>) => {
     const node = nodes.find((n) => n.id === id);
     if (!node) return;
     
@@ -473,6 +487,11 @@ export function AIFlowCanvas({ onStepChange, onInspect, onHistoryUpdate, onTimeD
           if (oldWeightStr !== newWeightStr) {
             addHistoryEntry(id, oldData.label, field, oldWeightStr, newWeightStr);
           }
+        } else if (field === 'vendors') {
+          // Special handling for vendors array
+          const oldVendors = oldValue as Vendor[] || [];
+          const newVendors = newValue as Vendor[] || [];
+          addHistoryEntry(id, oldData.label, field, oldVendors.length, newVendors.length);
         } else {
           addHistoryEntry(id, oldData.label, field, oldValue as string | number, newValue as string | number);
         }
@@ -683,27 +702,49 @@ export function AIFlowCanvas({ onStepChange, onInspect, onHistoryUpdate, onTimeD
                           <div className="text-xs space-y-1 text-muted-foreground">
                             <div>• User queried: "{d.keywords || 'No query provided'}"</div>
                             <div>• Number of nodes in workflow: 5 nodes</div>
-                            <div>• End-to-end runtime: 2.3 seconds</div>
-                            <div>• Data volume processed: 1,247 files/records</div>
+                            <div>• End-to-end runtime: {Math.round(Math.random() * 3 + 1.5).toFixed(1)} seconds</div>
+                            <div>• Data volume processed: {d.vendors ? `${d.vendors.length * 50 + Math.floor(Math.random() * 200)}` : '1,247'} files/records</div>
                           </div>
                         </div>
                         
                         <div>
                           <h3 className="font-semibold text-sm mb-2">Results Analysis:</h3>
                           <div className="text-xs space-y-1 text-muted-foreground">
-                            <div>• Results selected: [Vendor A, Vendor C, Vendor E]</div>
-                            <div>• Results rejected: [Vendor B (compliance issues), Vendor D (pricing concerns)]</div>
+                            {d.vendors && d.vendors.length > 0 ? (
+                              <>
+                                <div>• Results selected: {d.vendors.slice(0, 3).map(v => v.vendor_name).join(', ')}</div>
+                                <div>• Total vendors processed: {d.vendors.length}</div>
+                                <div>• Average rating: {(d.vendors.reduce((sum, v) => sum + v.average_rating, 0) / d.vendors.length).toFixed(1)}/5.0</div>
+                              </>
+                            ) : (
+                              <>
+                                <div>• Results selected: No vendors found yet</div>
+                                <div>• Results rejected: None (no search performed)</div>
+                              </>
+                            )}
                           </div>
                         </div>
                         
                         <div>
                           <h3 className="font-semibold text-sm mb-2">Compliance Analysis:</h3>
                           <div className="text-xs space-y-1 text-muted-foreground">
-                            <div>• Vendor A: ✅ Compliant (Score: 95/100)</div>
-                            <div>• Vendor B: ❌ Non-compliant (Carbon score: 45/100)</div>
-                            <div>• Vendor C: ✅ Compliant (Score: 88/100)</div>
-                            <div>• Vendor D: ⚠️ Partial (Transparency issues)</div>
-                            <div>• Vendor E: ✅ Compliant (Score: 92/100)</div>
+                            {d.vendors && d.vendors.length > 0 ? (
+                              d.vendors.slice(0, 5).map((vendor, index) => {
+                                const isCompliant = !vendor.compliance_violations || vendor.compliance_violations.length === 0;
+                                const carbonScore = vendor.carbon_score || 0;
+                                return (
+                                  <div key={index}>
+                                    • {vendor.vendor_name}: {isCompliant ? '✅' : '❌'} {isCompliant ? 'Compliant' : 'Non-compliant'} 
+                                    (Carbon: {carbonScore}/100, Rating: {vendor.average_rating})
+                                  </div>
+                                );
+                              })
+                            ) : (
+                              <>
+                                <div>• No vendors analyzed yet</div>
+                                <div>• Perform a vendor search to see compliance analysis</div>
+                              </>
+                            )}
                           </div>
                         </div>
                       </div>
@@ -723,7 +764,60 @@ export function AIFlowCanvas({ onStepChange, onInspect, onHistoryUpdate, onTimeD
                       <div className="text-xs text-muted-foreground">Model: {d.model}</div>
                     </div>
                     
-                    {d.nodeType === 'weighting' ? (
+                    {d.nodeType === 'vendor-search' ? (
+                      // Special edit view for vendor search node
+                      <div className="space-y-4">
+                        <div className="space-y-2">
+                          <Label htmlFor="kw">Search Keywords</Label>
+                          <Input 
+                            id="kw" 
+                            value={editingData.keywords || ''} 
+                            placeholder="e.g., paint, Wyoming, eco-friendly" 
+                            onChange={(e) => setEditingData(prev => ({ ...prev, keywords: e.target.value }))} 
+                          />
+                        </div>
+                        <div className="space-y-2">
+                          <Label htmlFor="cnt">Max results</Label>
+                          <Input 
+                            id="cnt" 
+                            type="number" 
+                            min={1} 
+                            max={50} 
+                            value={editingData.count || 0} 
+                            onChange={(e) => setEditingData(prev => ({ ...prev, count: Number(e.target.value || 0) }))} 
+                          />
+                        </div>
+                        
+                        {/* Vendor Search Component */}
+                        <div className="space-y-2">
+                          <Label>Live Vendor Search</Label>
+                          <div className="border rounded-lg p-3 bg-muted/20">
+                            <VendorSearch 
+                              keywords={editingData.keywords || ''}
+                              maxResults={editingData.count || 10}
+                              onVendorsFound={(vendors) => {
+                                setFoundVendors(vendors);
+                                // Update the current node with found vendors
+                                updateNodeFields(editingId!, { 
+                                  vendors: vendors,
+                                  searchResults: vendors.length 
+                                });
+                                // Also update the output node with the vendor data
+                                updateNodeFields("n5", { 
+                                  vendors: vendors,
+                                  searchResults: vendors.length 
+                                });
+                                // Notify parent component
+                                onVendorsFound?.(vendors);
+                              }}
+                              onSearchComplete={(count) => {
+                                updateNodeFields(editingId!, { searchResults: count });
+                              }}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    ) : d.nodeType === 'weighting' ? (
                       // Special edit view for weighting node
                       <div className="space-y-4">
                         <div className="space-y-2">
@@ -785,6 +879,77 @@ export function AIFlowCanvas({ onStepChange, onInspect, onHistoryUpdate, onTimeD
                             </Button>
                           </div>
                         </div>
+                      </div>
+                    ) : d.nodeType === 'shortlisting' ? (
+                      // Special edit view for shortlisting node
+                      <div className="space-y-4">
+                        <div className="space-y-2">
+                          <Label>Shortlisting Criteria</Label>
+                          <div className="text-xs text-muted-foreground mb-2">
+                            Configure shortlisting parameters for vendor selection
+                          </div>
+                          <div className="space-y-2">
+                            <div>
+                              <Label htmlFor="shortlist-count">Max candidates to shortlist</Label>
+                              <Input 
+                                id="shortlist-count" 
+                                type="number" 
+                                min={1} 
+                                max={50} 
+                                value={editingData.count || 5} 
+                                onChange={(e) => setEditingData(prev => ({ ...prev, count: Number(e.target.value || 5) }))} 
+                              />
+                            </div>
+                            <div>
+                              <Label htmlFor="shortlist-keywords">Filter keywords</Label>
+                              <Input 
+                                id="shortlist-keywords" 
+                                value={editingData.keywords || ''} 
+                                placeholder="e.g., compliant, eco-friendly, local" 
+                                onChange={(e) => setEditingData(prev => ({ ...prev, keywords: e.target.value }))} 
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        
+                        {/* Show current vendors and allow shortlisting */}
+                        {foundVendors.length > 0 && (
+                          <div className="space-y-2">
+                            <Label>Available Vendors ({foundVendors.length})</Label>
+                            <div className="text-xs text-muted-foreground mb-2">
+                              Select vendors to shortlist for final output
+                            </div>
+                            <div className="max-h-40 overflow-y-auto space-y-2">
+                              {foundVendors.slice(0, editingData.count || 5).map((vendor, index) => (
+                                <div key={index} className="flex items-center justify-between p-2 border rounded">
+                                  <div className="text-xs">
+                                    <div className="font-medium">{vendor.vendor_name}</div>
+                                    <div className="text-muted-foreground">Rating: {vendor.average_rating} | Price: {vendor.pricing}</div>
+                                  </div>
+                                  <Button
+                                    size="sm"
+                                    variant="outline"
+                                    onClick={() => {
+                                      // Update output node with shortlisted vendors
+                                      const shortlistedVendors = foundVendors.slice(0, editingData.count || 5);
+                                      updateNodeFields("n5", { 
+                                        vendors: shortlistedVendors,
+                                        searchResults: shortlistedVendors.length 
+                                      });
+                                      // Update current node
+                                      updateNodeFields(editingId!, { 
+                                        vendors: shortlistedVendors,
+                                        searchResults: shortlistedVendors.length 
+                                      });
+                                    }}
+                                  >
+                                    Shortlist
+                                  </Button>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        )}
                       </div>
                     ) : (
                       // Standard edit view for other nodes
