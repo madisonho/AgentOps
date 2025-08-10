@@ -19,6 +19,8 @@ https://docs.google.com/presentation/d/1TbW1PPBY_N1Bx8qM38k6NnKcyp7IzFO50D5wVgEQ
 
 ## Tech Stack
 
+Video demo link: https://drive.google.com/file/d/1koQo-h-U_E01D6BfhlOJBuY_m2G6Ea2G/view?usp=drive_link
+
 ### Core Technologies
 - **LangGraph** - Framework for building and visualizing stateful, multi-actor applications
 - **React 18** - Frontend library for building interactive visualizations
