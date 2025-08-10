@@ -1,33 +1,41 @@
-# AgentOps - AI-Powered Vendor Management System
+# AgentOps - Agentic Workflow Visualization & Audit Platform
 
 ## Overview
 
-AgentOps is a sophisticated vendor management system that leverages AI to streamline the vendor selection and evaluation process. The application uses a combination of React for the frontend and Python for AI/ML workflows, providing an intuitive interface for managing vendor data and making data-driven decisions.
+AgentOps is a powerful tool for visualizing, auditing, and understanding complex agentic workflows. Built with cutting-edge technologies including LangGraph for workflow orchestration, React 18 with Concurrent Mode, and TypeScript for type safety, it provides unprecedented transparency into AI decision-making processes, making them auditable and compliance-ready.
+
+**Demo Use Case**: Bob the Builder selects eco-friendly paint from 1,200+ vendors while avoiding high carbon scores, non-transparent supply chains, and illegal sourcing. This demonstrates how AgentOps can track and visualize complex decision-making workflows with multiple compliance parameters.
 
 ## Features
 
-- **Vendor Search & Filtering**: Advanced search capabilities to find vendors based on various criteria
-- **AI-Powered Shortlisting**: Intelligent ranking and shortlisting of vendors using custom algorithms
-- **Workflow Automation**: Automated vendor evaluation workflows using LangGraph
-- **Data Visualization**: Interactive dashboards for vendor performance metrics
-- **Compliance Tracking**: Monitor vendor compliance with industry standards and regulations
+- **Workflow Visualization**: Interactive node-based visualization of agentic workflows
+- **Deterministic Replay**: Replay and audit multi-agent decision processes
+- **Compliance Monitoring**: Real-time flagging of compliance issues with reasoning inspection
+- **Decision Reports**: Detailed reports of agent decisions and reasoning
+- **Benchmarking**: Compare different workflow executions and agent behaviors
 
 ## Tech Stack
 
+### Core Technologies
+- **LangGraph** - Framework for building and visualizing stateful, multi-actor applications
+- **React 18** - Frontend library for building interactive visualizations
+- **TypeScript** - Type-safe JavaScript for reliable development
+
+- **XYFlow** - Interactive node-based workflow visualization
+
 ### Frontend
-- **React 18** - Frontend library for building user interfaces
-- **TypeScript** - Type-safe JavaScript
-- **Vite** - Next Generation Frontend Tooling
-- **shadcn/ui** - Beautifully designed components
-- **Tailwind CSS** - Utility-first CSS framework
-- **React Query** - Data fetching and state management
-- **XYFlow** - Interactive node-based workflow editor
+- **TypeScript** - Type-safe JavaScript for robust development
+- **Vite** - Next Generation Frontend Tooling with lightning-fast HMR
+- **shadcn/ui** - Beautifully designed, accessible components
+- **Tailwind CSS** - Utility-first CSS framework for rapid UI development
+- **React Query** - Powerful data synchronization and state management
+- **Framer Motion** - Production-ready animation library for React
 
 ### Backend/AI
 - **Python 3.10+**
-- **LangGraph** - Framework for building stateful, multi-actor applications
 - **LangChain** - Framework for developing applications powered by language models
-- **Azure OpenAI** - For natural language processing tasks
+- **Azure OpenAI** - For natural language processing and reasoning
+- **Custom Compliance Engine** - Real-time compliance checking and flagging
 
 ## Getting Started
 
@@ -87,37 +95,76 @@ AgentOps is a sophisticated vendor management system that leverages AI to stream
 AgentOps/
 ├── src/                    # Frontend source code
 │   ├── components/         # Reusable UI components
-│   ├── pages/              # Page components
-│   ├── lib/                # Utility functions and API clients
-│   └── styles/             # Global styles
-├── public/                 # Static assets
-├── data/                   # Sample vendor datasets
-├── scripts/                # Utility scripts
-├── langgraph_workflow_skeleton.py  # AI workflow implementation
-└── extract_metrics_from_logs.py    # Log analysis utilities
+│   │   ├── workflow/      # Workflow visualization components
+│   │   ├── compliance/    # Compliance visualization components
+│   │   └── reports/       # Report generation components
+│   ├── pages/             # Application pages
+│   ├── lib/               # Utility functions and API clients
+│   └── styles/            # Global styles
+├── public/                # Static assets
+├── data/                  # Sample datasets and workflow examples
+│   ├── vendor-selection/  # Demo: Vendor selection workflow
+│   └── compliance-rules/  # Compliance rules and validators
+├── workflows/             # LangGraph workflow definitions
+├── scripts/               # Utility scripts
+└── docs/                  # Documentation and examples
 ```
 
-## Data Management
+## Demo Use Case: Vendor Selection Workflow
 
-The application works with vendor data in JSON format. Sample datasets are provided:
-- `vendor_dataset_1000.json`: Large dataset of vendor information
-- `vendor_data_compliance_*.json`: Compliance-related vendor data
-- `synthetic_vendor_data.json`: Generated sample data for testing
+Our demo showcases how AgentOps can track and visualize complex decision-making processes:
+
+**Scenario**: Selecting eco-friendly paint vendors while considering multiple compliance factors
+- **Dataset**: 1,200+ vendors with detailed profiles
+- **Compliance Parameters**:
+  - Carbon footprint scoring
+  - Supply chain transparency
+  - Legal sourcing verification
+  - Environmental impact metrics
+
+**Features Demonstrated**:
+- Real-time compliance flagging
+- Decision reasoning visualization
+- Narrative report generation
+- Workflow replay and audit
 
 ## Development
+
+### Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/AgentOps.git
+   cd AgentOps
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   pip install -r requirements.txt
+   ```
+
+3. **Set up environment variables**
+   Create a `.env` file with your API keys:
+   ```
+   OPENAI_API_KEY=your_key
+   ELEVENLABS_API_KEY=your_key
+   ```
 
 ### Available Scripts
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run lint` - Run ESLint
-- `npm run test` - Run tests (setup needed)
+- `npm run test` - Run tests
+- `python -m workflows.vendor_selection` - Run the vendor selection demo
 
-### Code Style
+### Code Style & Standards
 
-- TypeScript: Follows Airbnb style guide
-- Python: Follows PEP 8 guidelines
-- Pre-commit hooks for code formatting and linting
+- TypeScript: Airbnb style guide
+- Python: PEP 8 guidelines
+- Pre-commit hooks for code quality
+- Comprehensive docstrings for all functions
 
 ## Contributing
 
@@ -127,11 +174,29 @@ The application works with vendor data in JSON format. Sample datasets are provi
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
+## Roadmap
+
+### Next 24 Hours (If We Had Them)
+- Multi-agent branching comparisons
+- Richer vendor profiles with embedded documentation
+- Exportable compliance audit PDFs
+- Enhanced visualization for complex decision trees
+
+### Future Enhancements
+- Support for additional workflow frameworks
+- Custom compliance rule builder
+- Team collaboration features
+- Advanced analytics dashboard
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Support
 
-For support, please open an issue in the GitHub repository.
+For support or feature requests, please open an issue in the [GitHub repository](https://github.com/yourusername/AgentOps).
+
+## Team
+
+AgentOps was developed by a team of AI engineers and product designers passionate about making AI workflows transparent and auditable.
 
