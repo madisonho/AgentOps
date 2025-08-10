@@ -1,7 +1,8 @@
 import { useCallback, useMemo, useRef, useState } from "react";
-import { AIFlowCanvas } from "@/components/sandbox/AIFlowCanvas";
+import { AIFlowCanvas, type EditHistory } from "@/components/sandbox/AIFlowCanvas";
 import { MetricChart, type MetricPoint } from "@/components/sandbox/MetricChart";
 import { ActionTimeline, type ActionItem } from "@/components/sandbox/ActionTimeline";
+import { EditHistory as EditHistoryComponent } from "@/components/sandbox/EditHistory";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
@@ -10,6 +11,7 @@ import { toast } from "@/hooks/use-toast";
 const Index = () => {
   const [metrics, setMetrics] = useState<MetricPoint[]>([{ idx: 0, correctness: 60 }]);
   const [actions, setActions] = useState<ActionItem[]>([]);
+  const [editHistory, setEditHistory] = useState<EditHistory[]>([]);
   const tick = useRef(1);
   const [chatText, setChatText] = useState("");
   const [chatQuery, setChatQuery] = useState<string | undefined>(undefined);
@@ -32,6 +34,9 @@ const Index = () => {
   const reset = useCallback(() => {
     setMetrics([{ idx: 0, correctness: 60 }]);
     setActions([]);
+    setEditHistory([]);
+    setChatQuery(undefined);
+    setChatText("");
     tick.current = 1;
   }, []);
 
@@ -69,12 +74,27 @@ const Index = () => {
             />
             <Button type="submit">Send</Button>
           </form>
-          <AIFlowCanvas onStepChange={handleStepChange} onInspect={handleInspect} chatQuery={chatQuery} chatVersion={chatVersion} />
+          <AIFlowCanvas 
+            onStepChange={handleStepChange} 
+            onInspect={handleInspect} 
+            onHistoryUpdate={setEditHistory}
+            onReset={() => {
+              setMetrics([{ idx: 0, correctness: 60 }]);
+              setActions([]);
+              setEditHistory([]);
+            }}
+            chatQuery={chatQuery} 
+            chatVersion={chatVersion} 
+          />
         </section>
 
         <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <MetricChart data={metrics} />
           <ActionTimeline items={actions} />
+        </section>
+        
+        <section className="mt-6">
+          <EditHistoryComponent history={editHistory} />
         </section>
 
         <footer className="mt-10">

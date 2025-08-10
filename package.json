@@ -1,5 +1,8 @@
 {
   "name": "vite_react_shadcn_ts",
+  "overrides": {
+    "esbuild": "0.25.0"
+  },
   "private": true,
   "version": "0.0.0",
   "type": "module",
