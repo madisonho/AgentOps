@@ -6,6 +6,9 @@ AgentOps is a powerful tool for visualizing, auditing, and understanding complex
 
 **Demo Use Case**: Bob the Builder selects eco-friendly paint from 1,200+ vendors while avoiding high carbon scores, non-transparent supply chains, and illegal sourcing. This demonstrates how AgentOps can track and visualize complex decision-making workflows with multiple compliance parameters.
 
+## Slides
+https://docs.google.com/presentation/d/1TbW1PPBY_N1Bx8qM38k6NnKcyp7IzFO50D5wVgEQ0-k/edit?usp=sharing
+
 ## Features
 
 - **Workflow Visualization**: Interactive node-based visualization of agentic workflows
